@@ -128,7 +128,7 @@ class NetworkManager
     }
     
     //  Retrieve game logs for all the teams
-    func retrievePlayerInjuries(completion: @escaping ([GameLog]) -> ())
+    func retrieveGameLogs(completion: @escaping ([GameLog]) -> ())
     {
         let urlString = "https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/player_stats_totals.json"
         

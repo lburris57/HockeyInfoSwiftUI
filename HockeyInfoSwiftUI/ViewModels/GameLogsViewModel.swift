@@ -1,5 +1,5 @@
 //
-//  NHLStandingsViewModel.swift
+//  GameLogsViewModel.swift
 //  HockeyInfoSwiftUI
 //
 //  Created by Larry Burris on 6/16/19.
@@ -9,10 +9,10 @@ import Foundation
 import Combine
 import SwiftUI
 
-final class NHLStandingsViewModel: BindableObject
+final class GameLogsViewModel: BindableObject
 {
-    var didChange = PassthroughSubject<NHLStandingsViewModel, Never>()
-    var standings: NHLStandings?
+    var didChange = PassthroughSubject<GameLogsViewModel, Never>()
+    var gameLogs = [GameLog]()
     {
         didSet
         {
@@ -22,14 +22,14 @@ final class NHLStandingsViewModel: BindableObject
     
     init()
     {
-        fetchStandings()
+        fetchGameLogs()
     }
     
-    private func fetchStandings()
+    private func fetchGameLogs()
     {
-        NetworkManager().retrieveStandings
+        NetworkManager().retrieveGameLogs
         {
-            self.standings = $0
+            self.gameLogs = $0
         }
     }
 }
