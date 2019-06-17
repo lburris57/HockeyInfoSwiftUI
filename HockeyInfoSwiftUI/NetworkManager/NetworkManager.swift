@@ -9,25 +9,28 @@ import Foundation
 
 class NetworkManager
 {
-    let teams = "ANA,ARI,BOS,BUF,CGY,CAR,CHI,COL,CBJ,DAL,DET,EDM,FLO,LAK,MIN,MTL,NSH,NJD,NYI,NYR,OTT,PHI,PIT,SJS,STL,TBL,TOR,VAN,VGK,WSH,WPJ"
-    let authorizationValue = "Basic 6faa8a21-d219-433a-914b-fcd2d4:MYSPORTSFEEDS"
     let session = URLSession.shared
     
     //  Retrieve season schedule for all 31 teams
     func retrieveSeasonSchedule(completion: @escaping (SeasonSchedule) -> ())
     {
-        let urlString = "https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/games.json"
-        
         //  Get the JSON data with closure
-        session.dataTask(with: createRequest(urlString))
+        session.dataTask(with: createRequest(Constants.SEASON_SCHEDULE_URL))
         {
-            data, _, _ in
+            data, response, err in
             
-            let seasonSchedule = try! JSONDecoder().decode(SeasonSchedule.self, from: data!)
-            
-            DispatchQueue.main.async
+            if err != nil
             {
-                completion(seasonSchedule)
+                fatalError(err!.localizedDescription)
+            }
+            else if let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200
+            {
+                let seasonSchedule = try! JSONDecoder().decode(SeasonSchedule.self, from: data)
+                
+                DispatchQueue.main.async
+                {
+                    completion(seasonSchedule)
+                }
             }
         }.resume()
     }
@@ -35,18 +38,23 @@ class NetworkManager
     //  Retrieve team standings
     func retrieveStandings(completion: @escaping (NHLStandings) -> ())
     {
-        let urlString = "https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/standings.json"
-        
         //  Get the JSON data with closure
-        session.dataTask(with: createRequest(urlString))
+        session.dataTask(with: createRequest(Constants.STANDINGS_URL))
         {
-            data, _, _ in
+            data, response, err in
             
-            let nhlStandings = try! JSONDecoder().decode(NHLStandings.self, from: data!)
-            
-            DispatchQueue.main.async
+            if err != nil
             {
-                completion(nhlStandings)
+                fatalError(err!.localizedDescription)
+            }
+            else if let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200
+            {
+                let nhlStandings = try! JSONDecoder().decode(NHLStandings.self, from: data)
+                
+                DispatchQueue.main.async
+                {
+                    completion(nhlStandings)
+                }
             }
         }.resume()
     }
@@ -54,18 +62,23 @@ class NetworkManager
     //  Retrieve players from all 31 teams
     func retrieveRosters(completion: @escaping ([RosterPlayers]) -> ())
     {
-        let urlString = "https://api.mysportsfeeds.com/v2.0/pull/nhl/players.json?rosterstatus=assigned-to-roster"
-            
         //  Get the JSON data with closure
-        session.dataTask(with: createRequest(urlString))
+        session.dataTask(with: createRequest(Constants.ROSTER_PLAYERS_URL))
         {
-            data, _, _ in
+            data, response, err in
             
-            let rosterPlayers = try! JSONDecoder().decode([RosterPlayers].self, from: data!)
-            
-            DispatchQueue.main.async
+            if err != nil
             {
-                completion(rosterPlayers)
+                fatalError(err!.localizedDescription)
+            }
+            else if let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200
+            {
+                let rosterPlayers = try! JSONDecoder().decode([RosterPlayers].self, from: data)
+                
+                DispatchQueue.main.async
+                {
+                    completion(rosterPlayers)
+                }
             }
         }.resume()
     }
@@ -73,18 +86,23 @@ class NetworkManager
     //  Retrieve player statistics
     func retrievePlayerStats(completion: @escaping (PlayerStats) -> ())
     {
-        let urlString = "https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/player_stats_totals.json"
-        
         //  Get the JSON data with closure
-        session.dataTask(with: createRequest(urlString))
+        session.dataTask(with: createRequest(Constants.PLAYER_STATS_URL))
         {
-            data, _, _ in
+            data, response, err in
             
-            let playerStats = try! JSONDecoder().decode(PlayerStats.self, from: data!)
-            
-            DispatchQueue.main.async
+            if err != nil
             {
-                completion(playerStats)
+                fatalError(err!.localizedDescription)
+            }
+            else if let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200
+            {
+                let playerStats = try! JSONDecoder().decode(PlayerStats.self, from: data)
+                
+                DispatchQueue.main.async
+                {
+                    completion(playerStats)
+                }
             }
         }.resume()
     }
@@ -92,18 +110,23 @@ class NetworkManager
     //  Retrieve player injuries
     func retrievePlayerInjuries(completion: @escaping (PlayerInjuries) -> ())
     {
-        let urlString = "https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/player_stats_totals.json"
-        
         //  Get the JSON data with closure
-        session.dataTask(with: createRequest(urlString))
+        session.dataTask(with: createRequest(Constants.PLAYER_INJURIES_URL))
         {
-            data, _, _ in
+            data, response, err in
             
-            let playerInjuries = try! JSONDecoder().decode(PlayerInjuries.self, from: data!)
-            
-            DispatchQueue.main.async
+            if err != nil
             {
-                completion(playerInjuries)
+                fatalError(err!.localizedDescription)
+            }
+            else if let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200
+            {
+                let playerInjuries = try! JSONDecoder().decode(PlayerInjuries.self, from: data)
+                
+                DispatchQueue.main.async
+                {
+                    completion(playerInjuries)
+                }
             }
         }.resume()
     }
@@ -111,18 +134,23 @@ class NetworkManager
     //  Retrieve scoring summary for a particular game
     func retrieveScoringSummary(forGameId gameId: Int, completion: @escaping (ScoringSummary) -> ())
     {
-        let urlString = "https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/games/\(gameId)/boxscore.json?teamstats=none&playerstats=none"
-        
         //  Get the JSON data with closure
-        session.dataTask(with: createRequest(urlString))
+        session.dataTask(with: createRequest(Constants.SCORING_SUMMARY_URL_PART_1 + "\(gameId)" + Constants.SCORING_SUMMARY_URL_PART_2))
         {
-            data, _, _ in
+            data, response, err in
             
-            let scoringSummary = try! JSONDecoder().decode(ScoringSummary.self, from: data!)
-            
-            DispatchQueue.main.async
+            if err != nil
             {
-                completion(scoringSummary)
+                fatalError(err!.localizedDescription)
+            }
+            else if let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200
+            {
+                let scoringSummary = try! JSONDecoder().decode(ScoringSummary.self, from: data)
+                
+                DispatchQueue.main.async
+                {
+                    completion(scoringSummary)
+                }
             }
         }.resume()
     }
@@ -130,29 +158,35 @@ class NetworkManager
     //  Retrieve game logs for all the teams
     func retrieveGameLogs(completion: @escaping ([GameLog]) -> ())
     {
-        let urlString = "https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/player_stats_totals.json"
-        
         //  Get the JSON data with closure
-        session.dataTask(with: createRequest(urlString))
+        session.dataTask(with: createRequest(Constants.GAME_LOGS_URL))
         {
-            data, _, _ in
+            data, response, err in
             
-            let gameLogs = try! JSONDecoder().decode([GameLog].self, from: data!)
-            
-            DispatchQueue.main.async
+            if err != nil
             {
-                completion(gameLogs)
+                fatalError(err!.localizedDescription)
+            }
+            else if let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200
+            {
+                let gameLogs = try! JSONDecoder().decode([GameLog].self, from: data)
+                
+                DispatchQueue.main.async
+                {
+                    completion(gameLogs)
+                }
             }
         }.resume()
     }
     
+    //  Return a request populated with the URL and authorization information
     private func createRequest(_ url: String) -> URLRequest
     {
         let url = URL(string: url)
         
         var request = URLRequest(url: url!)
         
-        request.addValue(authorizationValue, forHTTPHeaderField: "Authorization")
+        request.addValue(Constants.AUTHORIZATION_VALUE, forHTTPHeaderField: Constants.AUTHORIZATION)
         
         return request
     }
