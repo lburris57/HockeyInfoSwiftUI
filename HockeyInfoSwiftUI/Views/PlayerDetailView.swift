@@ -1,14 +1,13 @@
 //
-//  PlayerImage
+//  PlayerDetailView
 //  HockeyInfoSwiftUI
 //
 //  Created by Larry Burris on 6/11/19.
 //  Copyright © 2019 Larry Burris. All rights reserved.
 //
-
 import SwiftUI
 
-struct PlayerImage : View
+struct PlayerDetailView : View
 {
     var image: Image
     
@@ -17,7 +16,7 @@ struct PlayerImage : View
         VStack
         {
             //  Team image
-            image.resizable().frame(height: 250).minimumScaleFactor(0.25)
+            image.resizable().frame(height: 225).minimumScaleFactor(0.25)
             
             //  Player Image
             Image("Ovechkin").resizable().scaledToFit()
@@ -62,14 +61,14 @@ struct PlayerImage : View
 }
 
 #if DEBUG
-struct PlayerImage_Previews : PreviewProvider
+struct PlayerDetailView_Previews : PreviewProvider
 {
     static var previews: some View
     {
         Group
         {
-            PlayerImage(image: Image("WSH")).previewDevice("iPhone 8+")
-            PlayerImage(image: Image("WSH")).previewDevice("iPhone SE")
+            PlayerDetailView(image: Image("WSH")).previewDevice("iPhone 8+")
+            PlayerDetailView(image: Image("WSH")).previewDevice("iPhone SE")
         }
     }
 }
