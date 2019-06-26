@@ -9,9 +9,11 @@ import SwiftUI
 
 struct GamesRemainingView : View
 {
+    var teamItem: TeamItem
+    
     var body: some View
     {
-        Text("Games Remaining View!")
+        Text("Games Remaining View for \(teamItem.teamName)!")
     }
 }
 
@@ -20,7 +22,7 @@ struct GamesRemainingView_Previews : PreviewProvider
 {
     static var previews: some View
     {
-        GamesRemainingView()
+        GamesRemainingView(teamItem: TeamItem.allTeamItems()[27])
     }
 }
 #endif

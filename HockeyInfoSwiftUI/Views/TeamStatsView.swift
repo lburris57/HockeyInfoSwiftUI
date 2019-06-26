@@ -9,9 +9,11 @@ import SwiftUI
 
 struct TeamStatsView : View
 {
+    var teamItem: TeamItem
+    
     var body: some View
     {
-        Text("Team Stats View!")
+        Text("Team Stats View for \(teamItem.teamName)!")
     }
 }
 
@@ -20,7 +22,7 @@ struct TeamStatsView_Previews : PreviewProvider
 {
     static var previews: some View
     {
-        TeamStatsView()
+        TeamStatsView(teamItem: TeamItem.allTeamItems()[21])
     }
 }
 #endif

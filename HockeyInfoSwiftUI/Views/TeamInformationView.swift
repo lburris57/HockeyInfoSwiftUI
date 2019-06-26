@@ -9,23 +9,25 @@ import SwiftUI
 
 struct TeamInformationView : View
 {
+    var teamItem: TeamItem
+    
     var body: some View
     {
         TabbedView()
         {
-            TeamRosterView().tabItemLabel(VStack{
+            TeamRosterView(teamItem: teamItem).tabItemLabel(VStack{
                 Image("icons8-queue")
                 Text("Roster")}).tag(1)
-            TeamInjuriesView().tabItemLabel(VStack{
+            TeamInjuriesView(teamItem: teamItem).tabItemLabel(VStack{
                 Image("icons8-broken_bone")
                 Text("Injuries")}).tag(2)
-            TeamStatsView().tabItemLabel(VStack{
+            TeamStatsView(teamItem: teamItem).tabItemLabel(VStack{
                 Image("icons8-pie_chart")
                 Text("Stats")}).tag(3)
-            GamesRemainingView().tabItemLabel(VStack{
+            GamesRemainingView(teamItem: teamItem).tabItemLabel(VStack{
                 Image("icons8-hashtag_large")
                 Text("Games Left")}).tag(4)
-            CompletedGamesView().tabItemLabel(VStack{
+            CompletedGamesView(teamItem: teamItem).tabItemLabel(VStack{
                 Image("icons8-rubiks_cube")
                 Text("Completed Games")}).tag(5)
         }
@@ -37,7 +39,7 @@ struct TeamInformationView_Previews : PreviewProvider
 {
     static var previews: some View
     {
-        TeamInformationView()
+        TeamInformationView(teamItem: TeamItem.allTeamItems()[26])
     }
 }
 #endif

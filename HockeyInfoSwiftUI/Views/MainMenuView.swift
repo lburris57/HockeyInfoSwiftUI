@@ -22,9 +22,9 @@ struct MainMenuView : View
                     MainMenuRow(mainMenuItem: MainMenuItem(description: "Season Schedule"))
                 }
                 
-                NavigationButton(destination: TeamInformationView())
+                NavigationButton(destination: TeamListView())
                 {
-                    MainMenuRow(mainMenuItem: MainMenuItem(description: "Team Information"))
+                    MainMenuRow(mainMenuItem: MainMenuItem(description: "Team Information List"))
                 }
                 
                 NavigationButton(destination: PlayerInformationView())
