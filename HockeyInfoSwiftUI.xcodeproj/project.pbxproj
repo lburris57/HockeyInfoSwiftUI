@@ -105,7 +105,10 @@
 		7677F65C22B6F26E00BAFE99 /* PlayerInjuriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F65B22B6F26E00BAFE99 /* PlayerInjuriesViewModel.swift */; };
 		7677F65E22B6F31100BAFE99 /* GameLogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F65D22B6F31100BAFE99 /* GameLogsViewModel.swift */; };
 		7677F66022B6F56500BAFE99 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F65F22B6F56500BAFE99 /* Constants.swift */; };
+		76A84A7D22C9AB30003D4C46 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A84A7C22C9AB30003D4C46 /* MapView.swift */; };
 		76C1FEB222C3076500F5DA67 /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1FEB122C3076500F5DA67 /* TeamListView.swift */; };
+		76C1FEB722C41BD800F5DA67 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1FEB622C41BD800F5DA67 /* Venue.swift */; };
+		76C1FEB922C98D1E00F5DA67 /* VenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1FEB822C98D1E00F5DA67 /* VenueView.swift */; };
 		76DD307022AD757D003AD3AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DD306F22AD757D003AD3AA /* AppDelegate.swift */; };
 		76DD307222AD757D003AD3AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DD307122AD757D003AD3AA /* SceneDelegate.swift */; };
 		76DD307422AD757D003AD3AA /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DD307322AD757D003AD3AA /* MainMenuView.swift */; };
@@ -215,7 +218,10 @@
 		7677F65B22B6F26E00BAFE99 /* PlayerInjuriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInjuriesViewModel.swift; sourceTree = "<group>"; };
 		7677F65D22B6F31100BAFE99 /* GameLogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogsViewModel.swift; sourceTree = "<group>"; };
 		7677F65F22B6F56500BAFE99 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76A84A7C22C9AB30003D4C46 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		76C1FEB122C3076500F5DA67 /* TeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListView.swift; sourceTree = "<group>"; };
+		76C1FEB622C41BD800F5DA67 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		76C1FEB822C98D1E00F5DA67 /* VenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueView.swift; sourceTree = "<group>"; };
 		76DD306C22AD757D003AD3AA /* HockeyInfoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HockeyInfoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DD306F22AD757D003AD3AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76DD307122AD757D003AD3AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -274,6 +280,8 @@
 				761CB6BE22C2DA33002EFCBE /* PlayerInformationView.swift */,
 				761CB6C022C2DA8E002EFCBE /* ScoresView.swift */,
 				76C1FEB122C3076500F5DA67 /* TeamListView.swift */,
+				76C1FEB822C98D1E00F5DA67 /* VenueView.swift */,
+				76A84A7C22C9AB30003D4C46 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -499,6 +507,14 @@
 			path = "Progress Bar";
 			sourceTree = "<group>";
 		};
+		76C1FEB522C41BA700F5DA67 /* Venue */ = {
+			isa = PBXGroup;
+			children = (
+				76C1FEB622C41BD800F5DA67 /* Venue.swift */,
+			);
+			path = Venue;
+			sourceTree = "<group>";
+		};
 		76DD306322AD757D003AD3AA = {
 			isa = PBXGroup;
 			children = (
@@ -520,6 +536,7 @@
 		76DD306E22AD757D003AD3AA /* HockeyInfoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				76C1FEB522C41BA700F5DA67 /* Venue */,
 				7610AD8C22C14779000F3658 /* Row Views */,
 				7610AD8B22C1466B000F3658 /* Views */,
 				7677F65F22B6F56500BAFE99 /* Constants.swift */,
@@ -669,6 +686,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7677F61522B6BFCC00BAFE99 /* GameLogReferences.swift in Sources */,
+				76C1FEB722C41BD800F5DA67 /* Venue.swift in Sources */,
 				7677F62D22B6DB8000BAFE99 /* NHLPlayer.swift in Sources */,
 				7677F5F722B6BFCC00BAFE99 /* CurrentInjuryData.swift in Sources */,
 				7677F60522B6BFCC00BAFE99 /* TeamInformation.swift in Sources */,
@@ -684,6 +702,7 @@
 				7677F65E22B6F31100BAFE99 /* GameLogsViewModel.swift in Sources */,
 				7677F5FC22B6BFCC00BAFE99 /* PlayerInjuryInfo.swift in Sources */,
 				7677F60122B6BFCC00BAFE99 /* TeamStats.swift in Sources */,
+				76A84A7D22C9AB30003D4C46 /* MapView.swift in Sources */,
 				7677F64722B6DBFF00BAFE99 /* TimeAndDateUtils.swift in Sources */,
 				7610AD9522C1981B000F3658 /* StandingsView.swift in Sources */,
 				7677F61622B6BFCC00BAFE99 /* GameLog.swift in Sources */,
@@ -698,6 +717,7 @@
 				7677F5E922B6BFCC00BAFE99 /* PeriodInfo.swift in Sources */,
 				7677F60322B6BFCC00BAFE99 /* OverallRankData.swift in Sources */,
 				7677F60922B6BFCC00BAFE99 /* StandingsReferenceData.swift in Sources */,
+				76C1FEB922C98D1E00F5DA67 /* VenueView.swift in Sources */,
 				76DD307022AD757D003AD3AA /* AppDelegate.swift in Sources */,
 				7610AD8E22C147AC000F3658 /* MainMenuRow.swift in Sources */,
 				760118DB22C2D09900677CED /* TeamInjuriesView.swift in Sources */,
