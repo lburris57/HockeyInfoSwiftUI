@@ -17,14 +17,16 @@ struct VenueView : View
         {
             HStack
             {
-                Image(venue.imageName).resizable().frame(width: 40, height: 35).aspectRatio(contentMode: .fit)
+                Image(venue.imageName).resizable().frame(width: 40, height: 25).aspectRatio(contentMode: .fit)
                 Text(venue.teamName).font(.headline).minimumScaleFactor(0.25)
             }
             
-            Image(venue.venueName).resizable().frame(height: 250).padding(.horizontal)
+            Image(venue.venueName).resizable().frame(height: 200).padding(.horizontal)
             Text(venue.venueName).font(.headline)
-            Text(venue.address).font(.subheadline).bold()
+            Text(venue.address).font(.subheadline).bold().minimumScaleFactor(0.25).padding(3)
             Text("Seats \(venue.seating)").font(.subheadline).bold()
+            
+            MapView(venue: venue).padding(5)
         }
     }
 }
@@ -34,7 +36,7 @@ struct VenueView_Previews : PreviewProvider
 {
     static var previews: some View
     {
-        VenueView(venue: Venue.allVenues()[8])
+        VenueView(venue: Venue.allVenues()[29])
     }
 }
 #endif

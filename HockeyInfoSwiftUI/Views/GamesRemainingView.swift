@@ -13,7 +13,7 @@ struct GamesRemainingView : View
     
     var body: some View
     {
-        Text("Games Remaining View for \(teamItem.teamName)!")
+        Text("Games Remaining View for \(teamItem.teamName)!").padding(40)
     }
 }
 

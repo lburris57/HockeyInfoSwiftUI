@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PlayerDetailView : View
 {
+    @EnvironmentObject var settings: UserSettings
+    
     var image: Image
     
     var body: some View
@@ -53,7 +55,7 @@ struct PlayerDetailView : View
             
             Button(action: {})
             {
-                Text("Display Player Details")
+                Text("Display Player Statistics")
                     .padding(.bottom, 20.0)
             }
         }
@@ -67,8 +69,7 @@ struct PlayerDetailView_Previews : PreviewProvider
     {
         Group
         {
-            PlayerDetailView(image: Image("WSH")).previewDevice("iPhone 8+")
-            PlayerDetailView(image: Image("WSH")).previewDevice("iPhone SE")
+            PlayerDetailView(image: Image("WSH")).previewDevice("iPhone 8+").environmentObject(UserSettings())
         }
     }
 }

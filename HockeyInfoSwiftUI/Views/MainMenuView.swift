@@ -11,48 +11,79 @@ import SwiftUI
 
 struct MainMenuView : View
 {
+    @EnvironmentObject var settings: UserSettings
+    
     var body: some View
     {
-        return NavigationView
+        NavigationView
         {
             List
             {
-                NavigationButton(destination: SeasonScheduleView())
+                NavigationLink(destination: SeasonScheduleView())
                 {
-                    MainMenuRow(mainMenuItem: MainMenuItem(description: "Season Schedule"))
+                    HStack
+                    {
+                        Image("scheduleCategory2").resizable().frame(width: 20, height: 20).aspectRatio(contentMode: .fit)
+                        MainMenuRow(mainMenuItem: MainMenuItem(description: "Season Schedule"))
+                    }
                 }
                 
-                NavigationButton(destination: TeamListView())
+                NavigationLink(destination: TeamListView())
                 {
-                    MainMenuRow(mainMenuItem: MainMenuItem(description: "Team Information List"))
+                    HStack
+                    {
+                        Image("teamInformationCategory").resizable().frame(width: 20, height: 20).aspectRatio(contentMode: .fit)
+                        MainMenuRow(mainMenuItem: MainMenuItem(description: "Team Information List"))
+                    }
+                }
+
+                NavigationLink(destination: SearchPlayerInformationView())
+                {
+                    HStack
+                    {
+                        Image("searchPlayersCategory").resizable().frame(width: 20, height: 20).aspectRatio(contentMode: .fit)
+                        MainMenuRow(mainMenuItem: MainMenuItem(description: "Search Players"))
+                    }
+                }
+
+                NavigationLink(destination: StandingsTabView())
+                {
+                    HStack
+                    {
+                        Image("NHL").resizable().frame(width: 25, height: 20).aspectRatio(contentMode: .fit)
+                        MainMenuRow(mainMenuItem: MainMenuItem(description: "Standings"))
+                    }
+                }
+
+                NavigationLink(destination: ScoresView())
+                {
+                    HStack
+                    {
+                        Image("scoreCategory").resizable().frame(width: 20, height: 20).aspectRatio(contentMode: .fit)
+                        MainMenuRow(mainMenuItem: MainMenuItem(description: "Scores"))
+                    }
                 }
                 
-                NavigationButton(destination: PlayerInformationView())
+                NavigationLink(destination: SettingsView())
                 {
-                    MainMenuRow(mainMenuItem: MainMenuItem(description: "Player Information"))
-                }
-                
-                NavigationButton(destination: StandingsView())
-                {
-                    MainMenuRow(mainMenuItem: MainMenuItem(description: "Standings"))
-                }
-                
-                NavigationButton(destination: ScoresView())
-                {
-                    MainMenuRow(mainMenuItem: MainMenuItem(description: "Scores"))
+                    HStack
+                    {
+                        Image("settingsCategory").resizable().frame(width: 20, height: 20).aspectRatio(contentMode: .fit)
+                        MainMenuRow(mainMenuItem: MainMenuItem(description: "Settings"))
+                    }
                 }
             }
-        }.navigationBarTitle(Text("Hockey Info"), displayMode: .inline)
+        }//.navigationBarTitle(Text("Hockey Info"), displayMode: .inline)
     }
 }
     
 
 #if DEBUG
-struct ContentView_Previews : PreviewProvider
+struct MainMenuView_Previews : PreviewProvider
 {
     static var previews: some View
     {
-        MainMenuView()
+        MainMenuView().environmentObject(UserSettings())
     }
 }
 #endif

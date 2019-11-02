@@ -9,27 +9,39 @@ import SwiftUI
 
 struct TeamInformationView : View
 {
+    @EnvironmentObject var settings: UserSettings
+    
     var teamItem: TeamItem
     
     var body: some View
     {
-        TabbedView()
+        TabView()
         {
-            TeamRosterView(teamItem: teamItem).tabItemLabel(VStack{
+            TeamRosterView(teamItem: teamItem).tabItem
+            {
                 Image("icons8-queue")
-                Text("Roster")}).tag(1)
-            TeamInjuriesView(teamItem: teamItem).tabItemLabel(VStack{
-                Image("icons8-broken_bone")
-                Text("Injuries")}).tag(2)
-            TeamStatsView(teamItem: teamItem).tabItemLabel(VStack{
+                Text("Roster")
+            }
+            TeamStatsView(teamItem: teamItem).tabItem
+            {
                 Image("icons8-pie_chart")
-                Text("Stats")}).tag(3)
-            GamesRemainingView(teamItem: teamItem).tabItemLabel(VStack{
-                Image("icons8-hashtag_large")
-                Text("Games Left")}).tag(4)
-            CompletedGamesView(teamItem: teamItem).tabItemLabel(VStack{
-                Image("icons8-rubiks_cube")
-                Text("Completed Games")}).tag(5)
+                Text("Stats")
+            }
+            PlayerInjuriesView(teamItem: teamItem).tabItem
+            {
+                Image("icons8-broken_bone")
+                Text("Injuries")
+            }
+            GameLogView(teamItem: teamItem).tabItem
+            {
+                Image("icons8-gameLog")
+                Text("Game Log")
+            }
+            VenueView(venue: Venue.allVenues()[29]).tabItem
+            {
+                Image("icons8-hockey")
+                Text("Venue")
+            }
         }
     }
 }
@@ -39,7 +51,7 @@ struct TeamInformationView_Previews : PreviewProvider
 {
     static var previews: some View
     {
-        TeamInformationView(teamItem: TeamItem.allTeamItems()[26])
+        TeamInformationView(teamItem: TeamItem.allTeamItems()[26]).environmentObject(UserSettings())
     }
 }
 #endif

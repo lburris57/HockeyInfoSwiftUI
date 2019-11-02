@@ -11,8 +11,8 @@ import SwiftUI
 struct CurrentInjuryData: Codable, Hashable, Identifiable
 {
     var id = UUID()
-    var description: String
-    var playingProbability: String
+    var description = ""
+    var playingProbability = ""
     
     private enum CodingKeys : String, CodingKey
     {

@@ -15,7 +15,7 @@ struct TeamRowView : View
     {
         HStack()
         {
-            Image(teamItem.teamIconName).resizable().frame(width: 30, height: 25).aspectRatio(contentMode: .fit).padding(.leading)
+            Image(teamItem.teamIconName).resizable().frame(width: 30, height: 20).aspectRatio(contentMode: .fit).padding(.leading)
             Text(teamItem.teamName)
             Spacer()
         }

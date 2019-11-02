@@ -9,27 +9,27 @@ import Foundation
 import Combine
 import SwiftUI
 
-final class GameLogsViewModel: BindableObject
+final class GameLogsViewModel: ObservableObject
 {
-    var didChange = PassthroughSubject<GameLogsViewModel, Never>()
-    var gameLogs = [GameLog]()
+    var willChange = PassthroughSubject<GameLogsViewModel, Never>()
+    var gameLog = GameLog()
     {
-        didSet
+        willSet
         {
-            didChange.send(self)
+            willChange.send(self)
         }
     }
     
     init()
     {
-        fetchGameLogs()
+        fetchGameLog()
     }
     
-    private func fetchGameLogs()
+    private func fetchGameLog()
     {
-        NetworkManager().retrieveGameLogs
+        NetworkManager().retrieveGameLog
         {
-            self.gameLogs = $0
+            self.gameLog = $0
         }
     }
 }

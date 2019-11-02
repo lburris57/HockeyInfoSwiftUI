@@ -11,11 +11,11 @@ import SwiftUI
 struct PlayerStatData: Codable, Hashable, Identifiable
 {
     var id = UUID()
-    var gamesPlayed: Int?
-    var scoringData: ScoringData?
+    var gamesPlayed = 0
+    var scoringData = ScoringData()
     var skatingData: SkatingData?
     var goaltendingData: GoaltendingData?
-    var penaltyData: PenaltyData?
+    var penaltyData = PenaltyData()
     
     private enum CodingKeys : String, CodingKey
     {

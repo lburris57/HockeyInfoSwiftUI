@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TeamStatsView : View
 {
+    @EnvironmentObject var settings: UserSettings
+    
     var teamItem: TeamItem
     
     var body: some View
@@ -22,7 +24,7 @@ struct TeamStatsView_Previews : PreviewProvider
 {
     static var previews: some View
     {
-        TeamStatsView(teamItem: TeamItem.allTeamItems()[21])
+        TeamStatsView(teamItem: TeamItem.allTeamItems()[21]).environmentObject(UserSettings())
     }
 }
 #endif

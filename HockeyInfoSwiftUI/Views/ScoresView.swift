@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ScoresView : View
 {
+    @EnvironmentObject var settings: UserSettings
+    
     var body: some View
     {
         Text("Scores View!")
@@ -20,7 +22,7 @@ struct ScoresView_Previews : PreviewProvider
 {
     static var previews: some View
     {
-        ScoresView()
+        ScoresView().environmentObject(UserSettings())
     }
 }
 #endif

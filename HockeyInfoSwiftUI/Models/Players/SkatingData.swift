@@ -11,15 +11,15 @@ import SwiftUI
 struct SkatingData: Codable, Hashable, Identifiable
 {
     var id = UUID()
-    var plusMinus: Int?
-    var shots: Int?
-    var shotPercentage: Double?
-    var blockedShots: Int?
-    var hits: Int?
-    var faceoffs: Int?
-    var faceoffWins: Int?
-    var faceoffLosses: Int?
-    var faceoffPercent: Double?
+    var plusMinus = 0
+    var shots = 0
+    var shotPercentage = 0.0
+    var blockedShots = 0
+    var hits = 0
+    var faceoffs = 0
+    var faceoffWins = 0
+    var faceoffLosses = 0
+    var faceoffPercent = 0.0
     
     private enum CodingKeys : String, CodingKey
     {

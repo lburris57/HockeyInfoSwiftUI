@@ -9,14 +9,14 @@ import Foundation
 import Combine
 import SwiftUI
 
-final class PlayerStatisticsViewModel: BindableObject
+final class PlayerStatisticsViewModel: ObservableObject
 {
-    var didChange = PassthroughSubject<PlayerStatisticsViewModel, Never>()
-    var playerStats: PlayerStats?
+    var willChange = PassthroughSubject<PlayerStatisticsViewModel, Never>()
+    var playerStats = PlayerStats()
     {
-        didSet
+        willSet
         {
-            didChange.send(self)
+            willChange.send(self)
         }
     }
     

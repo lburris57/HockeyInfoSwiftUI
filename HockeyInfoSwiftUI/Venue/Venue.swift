@@ -39,7 +39,7 @@ extension Venue
             Venue(imageName: "EDM", teamName: "Edmonton Oilers", venueName: "Rogers Place", seating: 18347, address: "10220 104 Ave NW, Edmonton, AB T5H 2X6, Canada", latitude: 53.546944, longitude: -113.497778),
             Venue(imageName: "FLO", teamName: "Florida Panthers", venueName: "BB&T Center", seating: 20737, address: "1 Panther Pkwy, Sunrise, FL 33323", latitude: 26.158333, longitude: -80.325556),
             Venue(imageName: "LAK", teamName: "Los Angeles Kings", venueName: "Staples Center", seating: 21000, address: "1111 S Figueroa St, Los Angeles, CA 90015", latitude: 34.043056, longitude: -118.267222),
-            Venue(imageName: "MIN", teamName: "Minnesota Wild", venueName: " Xcel Energy Center", seating: 20554, address: "199 W Kellogg Blvd, St Paul, MN 55102", latitude: 44.944722, longitude: -93.101111),
+            Venue(imageName: "MIN", teamName: "Minnesota Wild", venueName: "Xcel Energy Center", seating: 20554, address: "199 W Kellogg Blvd, St Paul, MN 55102", latitude: 44.944722, longitude: -93.101111),
             Venue(imageName: "MTL", teamName: "Montreal Canadiens", venueName: "Bell Centre", seating: 21273, address: "1909 Avenue des Canadiens-de-Montréal, Montréal, QC H4B 5G0, Canada", latitude: 45.496111, longitude: -73.569444),
             Venue(imageName: "NSH", teamName: "Nashville Predators", venueName: "Bridgestone Arena", seating: 19500, address: "501 Broadway, Nashville, TN 37203", latitude: 36.159167, longitude: -86.778611),
             Venue(imageName: "NJD", teamName: "New Jersey Devils", venueName: "Prudential Center", seating: 16514, address: "25 Lafayette St, Newark, NJ 07102", latitude: 40.733611, longitude: -74.171111),

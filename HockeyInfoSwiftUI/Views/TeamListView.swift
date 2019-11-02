@@ -9,13 +9,15 @@ import SwiftUI
 
 struct TeamListView : View
 {
+    @EnvironmentObject var settings: UserSettings
+    
     var teamItemList = TeamItem.allTeamItems()
     
     var body: some View
     {
         List(teamItemList)
         {
-            teamItem in NavigationButton(destination: TeamInformationView(teamItem: teamItem))
+            teamItem in NavigationLink(destination: TeamInformationView(teamItem: teamItem))
             {
                 VStack
                 {
@@ -31,7 +33,7 @@ struct TeamListView_Previews : PreviewProvider
 {
     static var previews: some View
     {
-        TeamListView()
+        TeamListView().environmentObject(UserSettings())
     }
 }
 #endif

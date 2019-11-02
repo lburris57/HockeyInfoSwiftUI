@@ -13,7 +13,7 @@ struct CompletedGamesView : View
     
     var body: some View
     {
-        Text("Completed Games View for \(teamItem.teamName)!")
+        Text("Completed Games View for \(teamItem.teamName)!").padding(40)
     }
 }
 

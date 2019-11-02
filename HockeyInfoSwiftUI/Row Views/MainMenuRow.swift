@@ -13,7 +13,7 @@ struct MainMenuRow : View
     
     var body: some View
     {
-        Text(mainMenuItem.description)
+        Text(mainMenuItem.description).foregroundColor(.black).bold()
     }
 }
 

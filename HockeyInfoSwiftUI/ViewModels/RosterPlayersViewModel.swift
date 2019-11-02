@@ -9,27 +9,41 @@ import Foundation
 import Combine
 import SwiftUI
 
-final class RosterPlayersViewModel: BindableObject
+final class RosterPlayersViewModel: ObservableObject, Identifiable
 {
-    var didChange = PassthroughSubject<RosterPlayersViewModel, Never>()
-    var players = [RosterPlayers]()
+    var willChange = PassthroughSubject<RosterPlayersViewModel, Never>()
+    
+    var playerNames = [String]()
     {
-        didSet
+        willSet
         {
-            didChange.send(self)
+            willChange.send(self)
         }
     }
     
+    var rosterPlayers = RosterPlayers()
+    
     init()
     {
+        //print("Season setting URL is: \(Constants.SEASON_SETTING_URL)")
         fetchRosterPlayers()
     }
     
     private func fetchRosterPlayers()
     {
+        var playerNameArray = [String]()
+        
         NetworkManager().retrieveRosters
         {
-            self.players = $0
+            for playerInfo in $0.playerInfoList
+            {
+                playerNameArray.append(playerInfo.player.firstName + " " + playerInfo.player.lastName)
+            }
+            
+            self.rosterPlayers = $0
+            
+            //  Remove any duplicate names
+            self.playerNames = Set(playerNameArray.map { $0 }).sorted()
         }
     }
 }

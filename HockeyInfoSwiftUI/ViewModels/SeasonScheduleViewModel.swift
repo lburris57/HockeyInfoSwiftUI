@@ -9,25 +9,29 @@ import Foundation
 import Combine
 import SwiftUI
 
-final class SeasonScheduleViewModel: BindableObject
+final class SeasonScheduleViewModel: ObservableObject
 {
-    var didChange = PassthroughSubject<SeasonScheduleViewModel, Never>()
-    var seasonSchedule: SeasonSchedule?
+    var willChange = PassthroughSubject<SeasonScheduleViewModel, Never>()
+    var seasonSchedule = SeasonSchedule()
     {
-        didSet
+        willSet
         {
-            didChange.send(self)
+            willChange.send(self)
         }
     }
     
     init()
     {
+        let startTime = Date().timeIntervalSince1970
+        
         fetchSeasonSchedule()
+        
+        print("Total elapsed time to retrieve full season schedule model is: \((Date().timeIntervalSince1970 - startTime).rounded()) seconds.")
     }
     
     private func fetchSeasonSchedule()
     {
-        NetworkManager().retrieveSeasonSchedule
+        NetworkManager().retrieveFullSeasonSchedule
         {
             self.seasonSchedule = $0
         }

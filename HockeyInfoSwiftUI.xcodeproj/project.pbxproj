@@ -3,28 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		199E9C98DCF51A023E0429DC /* Pods_HockeyInfoSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3877C65906B64C2A672A08FE /* Pods_HockeyInfoSwiftUI.framework */; };
-		760118D122C1A02500677CED /* DivisionStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760118D022C1A02500677CED /* DivisionStandingsView.swift */; };
-		760118D322C1A07D00677CED /* ConferenceStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760118D222C1A07D00677CED /* ConferenceStandingsView.swift */; };
-		760118D522C1A0DC00677CED /* LeagueStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760118D422C1A0DC00677CED /* LeagueStandingsView.swift */; };
-		760118D722C2CFF300677CED /* TeamInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760118D622C2CFF300677CED /* TeamInformationView.swift */; };
-		760118D922C2D02D00677CED /* TeamRosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760118D822C2D02D00677CED /* TeamRosterView.swift */; };
-		760118DB22C2D09900677CED /* TeamInjuriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760118DA22C2D09900677CED /* TeamInjuriesView.swift */; };
-		760118DD22C2D0D600677CED /* TeamStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760118DC22C2D0D500677CED /* TeamStatsView.swift */; };
-		760118DF22C2D13B00677CED /* GamesRemainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760118DE22C2D13B00677CED /* GamesRemainingView.swift */; };
-		760118E122C2D17C00677CED /* CompletedGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760118E022C2D17C00677CED /* CompletedGamesView.swift */; };
-		7610AD8E22C147AC000F3658 /* MainMenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7610AD8D22C147AC000F3658 /* MainMenuRow.swift */; };
-		7610AD9522C1981B000F3658 /* StandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7610AD9422C1981A000F3658 /* StandingsView.swift */; };
-		761713C522B035C5001BE6AB /* PlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761713C422B035C5001BE6AB /* PlayerDetailView.swift */; };
-		761CB6BD22C2D969002EFCBE /* SeasonScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761CB6BC22C2D969002EFCBE /* SeasonScheduleView.swift */; };
-		761CB6BF22C2DA33002EFCBE /* PlayerInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761CB6BE22C2DA33002EFCBE /* PlayerInformationView.swift */; };
-		761CB6C122C2DA8E002EFCBE /* ScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761CB6C022C2DA8E002EFCBE /* ScoresView.swift */; };
-		7663962122C2EB8300E442AE /* TeamRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7663962022C2EB8300E442AE /* TeamRowView.swift */; };
-		7677F5B122B6BEAA00BAFE99 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F5B022B6BEAA00BAFE99 /* NetworkManager.swift */; };
+		7620D471235D01D700031732 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D470235D01D700031732 /* UserDefaultsHelper.swift */; };
+		7620D4742364DCE000031732 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7620D4732364DCE000031732 /* Storage.swift */; };
 		7677F5E922B6BFCC00BAFE99 /* PeriodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F5B422B6BFCC00BAFE99 /* PeriodInfo.swift */; };
 		7677F5EA22B6BFCC00BAFE99 /* ScheduleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F5B522B6BFCC00BAFE99 /* ScheduleInfo.swift */; };
 		7677F5EB22B6BFCC00BAFE99 /* SeasonSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F5B622B6BFCC00BAFE99 /* SeasonSchedule.swift */; };
@@ -73,7 +58,6 @@
 		7677F61622B6BFCC00BAFE99 /* GameLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F5E522B6BFCC00BAFE99 /* GameLog.swift */; };
 		7677F61722B6BFCC00BAFE99 /* GameReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F5E622B6BFCC00BAFE99 /* GameReference.swift */; };
 		7677F61822B6BFCC00BAFE99 /* MenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F5E822B6BFCC00BAFE99 /* MenuCategory.swift */; };
-		7677F61B22B6D7BA00BAFE99 /* SeasonScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F61A22B6D7BA00BAFE99 /* SeasonScheduleViewModel.swift */; };
 		7677F62822B6DB8000BAFE99 /* NHLPeriodScoringData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F61D22B6DB8000BAFE99 /* NHLPeriodScoringData.swift */; };
 		7677F62922B6DB8000BAFE99 /* TeamStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F61E22B6DB8000BAFE99 /* TeamStatistics.swift */; };
 		7677F62A22B6DB8000BAFE99 /* NHLTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F61F22B6DB8000BAFE99 /* NHLTeam.swift */; };
@@ -98,20 +82,58 @@
 		7677F65022B6DBFF00BAFE99 /* NetworkErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F64122B6DBFE00BAFE99 /* NetworkErrorEnum.swift */; };
 		7677F65122B6DBFF00BAFE99 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F64322B6DBFE00BAFE99 /* Extensions.swift */; };
 		7677F65222B6DBFF00BAFE99 /* TYProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F64522B6DBFF00BAFE99 /* TYProgressBar.swift */; };
-		7677F65422B6DED000BAFE99 /* TeamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F65322B6DED000BAFE99 /* TeamManager.swift */; };
-		7677F65622B6E45100BAFE99 /* NHLStandingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F65522B6E45100BAFE99 /* NHLStandingsViewModel.swift */; };
-		7677F65822B6F03F00BAFE99 /* RosterPlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F65722B6F03F00BAFE99 /* RosterPlayersViewModel.swift */; };
-		7677F65A22B6F13D00BAFE99 /* PlayerStatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F65922B6F13D00BAFE99 /* PlayerStatisticsViewModel.swift */; };
-		7677F65C22B6F26E00BAFE99 /* PlayerInjuriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F65B22B6F26E00BAFE99 /* PlayerInjuriesViewModel.swift */; };
-		7677F65E22B6F31100BAFE99 /* GameLogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F65D22B6F31100BAFE99 /* GameLogsViewModel.swift */; };
 		7677F66022B6F56500BAFE99 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677F65F22B6F56500BAFE99 /* Constants.swift */; };
-		76A84A7D22C9AB30003D4C46 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A84A7C22C9AB30003D4C46 /* MapView.swift */; };
-		76C1FEB222C3076500F5DA67 /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1FEB122C3076500F5DA67 /* TeamListView.swift */; };
+		768D323A2359539A002F9287 /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D32392359539A002F9287 /* URLHelper.swift */; };
+		7693D1A123519CC6008681C3 /* SeasonScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D18523519CC6008681C3 /* SeasonScheduleView.swift */; };
+		7693D1A223519CC6008681C3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D18623519CC6008681C3 /* SettingsView.swift */; };
+		7693D1A323519CC6008681C3 /* PlayerLeadersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D18723519CC6008681C3 /* PlayerLeadersView.swift */; };
+		7693D1A423519CC6008681C3 /* PlayerLeaderDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D18823519CC6008681C3 /* PlayerLeaderDataView.swift */; };
+		7693D1A523519CC6008681C3 /* PlayerLeaderHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D18923519CC6008681C3 /* PlayerLeaderHeaderView.swift */; };
+		7693D1A623519CC6008681C3 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D18A23519CC6008681C3 /* MainMenuView.swift */; };
+		7693D1A723519CC6008681C3 /* LeagueStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D18B23519CC6008681C3 /* LeagueStandingsView.swift */; };
+		7693D1A823519CC6008681C3 /* ScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D18C23519CC6008681C3 /* ScoresView.swift */; };
+		7693D1A923519CC6008681C3 /* GoalieLeadersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D18D23519CC6008681C3 /* GoalieLeadersView.swift */; };
+		7693D1AA23519CC6008681C3 /* GameLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D18E23519CC6008681C3 /* GameLogView.swift */; };
+		7693D1AB23519CC6008681C3 /* PlayerLeaderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D18F23519CC6008681C3 /* PlayerLeaderImageView.swift */; };
+		7693D1AC23519CC6008681C3 /* TeamStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19023519CC6008681C3 /* TeamStatsView.swift */; };
+		7693D1AD23519CC6008681C3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19123519CC6008681C3 /* MapView.swift */; };
+		7693D1AE23519CC6008681C3 /* SearchPlayerInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19223519CC6008681C3 /* SearchPlayerInformationView.swift */; };
+		7693D1AF23519CC6008681C3 /* TeamInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19323519CC6008681C3 /* TeamInformationView.swift */; };
+		7693D1B023519CC6008681C3 /* DivisionStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19423519CC6008681C3 /* DivisionStandingsView.swift */; };
+		7693D1B123519CC6008681C3 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19523519CC6008681C3 /* SearchBar.swift */; };
+		7693D1B223519CC6008681C3 /* TeamRosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19623519CC6008681C3 /* TeamRosterView.swift */; };
+		7693D1B323519CC6008681C3 /* LeadersTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19723519CC6008681C3 /* LeadersTabView.swift */; };
+		7693D1B423519CC6008681C3 /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19823519CC6008681C3 /* TeamListView.swift */; };
+		7693D1B523519CC6008681C3 /* PlayerInjuriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19923519CC6008681C3 /* PlayerInjuriesView.swift */; };
+		7693D1B623519CC6008681C3 /* PlayerStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19A23519CC6008681C3 /* PlayerStatsView.swift */; };
+		7693D1B723519CC6008681C3 /* GamesRemainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19B23519CC6008681C3 /* GamesRemainingView.swift */; };
+		7693D1B823519CC6008681C3 /* CompletedGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19C23519CC6008681C3 /* CompletedGamesView.swift */; };
+		7693D1B923519CC6008681C3 /* PlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19D23519CC6008681C3 /* PlayerDetailView.swift */; };
+		7693D1BA23519CC6008681C3 /* VenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19E23519CC6008681C3 /* VenueView.swift */; };
+		7693D1BB23519CC6008681C3 /* StandingsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D19F23519CC6008681C3 /* StandingsTabView.swift */; };
+		7693D1BC23519CC6008681C3 /* ConferenceStandingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1A023519CC6008681C3 /* ConferenceStandingsView.swift */; };
+		7693D1C123519FFA008681C3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1BE23519FFA008681C3 /* NetworkManager.swift */; };
+		7693D1C223519FFA008681C3 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1BF23519FFA008681C3 /* DBManager.swift */; };
+		7693D1C323519FFA008681C3 /* TeamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1C023519FFA008681C3 /* TeamManager.swift */; };
+		7693D1CF2351A0DE008681C3 /* NHLStandingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1C52351A0DE008681C3 /* NHLStandingsViewModel.swift */; };
+		7693D1D02351A0DE008681C3 /* PlayerLeadersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1C62351A0DE008681C3 /* PlayerLeadersViewModel.swift */; };
+		7693D1D12351A0DE008681C3 /* PlayerInjuriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1C72351A0DE008681C3 /* PlayerInjuriesViewModel.swift */; };
+		7693D1D22351A0DE008681C3 /* RosterPlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1C82351A0DE008681C3 /* RosterPlayersViewModel.swift */; };
+		7693D1D32351A0DE008681C3 /* PlayerLeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1C92351A0DE008681C3 /* PlayerLeaderModel.swift */; };
+		7693D1D42351A0DE008681C3 /* SeasonScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1CA2351A0DE008681C3 /* SeasonScheduleViewModel.swift */; };
+		7693D1D52351A0DE008681C3 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1CB2351A0DE008681C3 /* UserSettings.swift */; };
+		7693D1D62351A0DE008681C3 /* GameLogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1CC2351A0DE008681C3 /* GameLogsViewModel.swift */; };
+		7693D1D72351A0DE008681C3 /* PlayerStatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1CD2351A0DE008681C3 /* PlayerStatisticsViewModel.swift */; };
+		7693D1DF2351A389008681C3 /* StandingsHeaderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1DA2351A388008681C3 /* StandingsHeaderRow.swift */; };
+		7693D1E02351A389008681C3 /* TeamRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1DB2351A388008681C3 /* TeamRowView.swift */; };
+		7693D1E12351A389008681C3 /* LeaderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1DC2351A388008681C3 /* LeaderRow.swift */; };
+		7693D1E22351A389008681C3 /* StandingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1DD2351A388008681C3 /* StandingsRow.swift */; };
+		7693D1E32351A389008681C3 /* MainMenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1DE2351A388008681C3 /* MainMenuRow.swift */; };
+		7693D1E623526C77008681C3 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7693D1E523526C77008681C3 /* KingfisherSwiftUI */; };
+		7693D1EB235418E1008681C3 /* DataExchangeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7693D1EA235418E1008681C3 /* DataExchangeHelper.swift */; };
 		76C1FEB722C41BD800F5DA67 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1FEB622C41BD800F5DA67 /* Venue.swift */; };
-		76C1FEB922C98D1E00F5DA67 /* VenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1FEB822C98D1E00F5DA67 /* VenueView.swift */; };
 		76DD307022AD757D003AD3AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DD306F22AD757D003AD3AA /* AppDelegate.swift */; };
 		76DD307222AD757D003AD3AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DD307122AD757D003AD3AA /* SceneDelegate.swift */; };
-		76DD307422AD757D003AD3AA /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DD307322AD757D003AD3AA /* MainMenuView.swift */; };
 		76DD307622AD7584003AD3AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DD307522AD7584003AD3AA /* Assets.xcassets */; };
 		76DD307922AD7584003AD3AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DD307822AD7584003AD3AA /* Preview Assets.xcassets */; };
 		76F9897C22B9B0A80050744C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F9897B22B9B0A80050744C /* LaunchScreen.storyboard */; };
@@ -121,23 +143,8 @@
 		0044AC43B874B1A9E1AAD5BE /* Pods-HockeyInfoSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HockeyInfoSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-HockeyInfoSwiftUI/Pods-HockeyInfoSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		16183DA9EE168919255C46B6 /* Pods-HockeyInfoSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HockeyInfoSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-HockeyInfoSwiftUI/Pods-HockeyInfoSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		3877C65906B64C2A672A08FE /* Pods_HockeyInfoSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HockeyInfoSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		760118D022C1A02500677CED /* DivisionStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionStandingsView.swift; sourceTree = "<group>"; };
-		760118D222C1A07D00677CED /* ConferenceStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceStandingsView.swift; sourceTree = "<group>"; };
-		760118D422C1A0DC00677CED /* LeagueStandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueStandingsView.swift; sourceTree = "<group>"; };
-		760118D622C2CFF300677CED /* TeamInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInformationView.swift; sourceTree = "<group>"; };
-		760118D822C2D02D00677CED /* TeamRosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRosterView.swift; sourceTree = "<group>"; };
-		760118DA22C2D09900677CED /* TeamInjuriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInjuriesView.swift; sourceTree = "<group>"; };
-		760118DC22C2D0D500677CED /* TeamStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStatsView.swift; sourceTree = "<group>"; };
-		760118DE22C2D13B00677CED /* GamesRemainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesRemainingView.swift; sourceTree = "<group>"; };
-		760118E022C2D17C00677CED /* CompletedGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedGamesView.swift; sourceTree = "<group>"; };
-		7610AD8D22C147AC000F3658 /* MainMenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuRow.swift; sourceTree = "<group>"; };
-		7610AD9422C1981A000F3658 /* StandingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsView.swift; sourceTree = "<group>"; };
-		761713C422B035C5001BE6AB /* PlayerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailView.swift; sourceTree = "<group>"; };
-		761CB6BC22C2D969002EFCBE /* SeasonScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonScheduleView.swift; sourceTree = "<group>"; };
-		761CB6BE22C2DA33002EFCBE /* PlayerInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInformationView.swift; sourceTree = "<group>"; };
-		761CB6C022C2DA8E002EFCBE /* ScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresView.swift; sourceTree = "<group>"; };
-		7663962022C2EB8300E442AE /* TeamRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRowView.swift; sourceTree = "<group>"; };
-		7677F5B022B6BEAA00BAFE99 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7620D470235D01D700031732 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		7620D4732364DCE000031732 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		7677F5B422B6BFCC00BAFE99 /* PeriodInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodInfo.swift; sourceTree = "<group>"; };
 		7677F5B522B6BFCC00BAFE99 /* ScheduleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleInfo.swift; sourceTree = "<group>"; };
 		7677F5B622B6BFCC00BAFE99 /* SeasonSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonSchedule.swift; sourceTree = "<group>"; };
@@ -186,7 +193,6 @@
 		7677F5E522B6BFCC00BAFE99 /* GameLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLog.swift; sourceTree = "<group>"; };
 		7677F5E622B6BFCC00BAFE99 /* GameReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameReference.swift; sourceTree = "<group>"; };
 		7677F5E822B6BFCC00BAFE99 /* MenuCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCategory.swift; sourceTree = "<group>"; };
-		7677F61A22B6D7BA00BAFE99 /* SeasonScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonScheduleViewModel.swift; sourceTree = "<group>"; };
 		7677F61D22B6DB8000BAFE99 /* NHLPeriodScoringData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NHLPeriodScoringData.swift; sourceTree = "<group>"; };
 		7677F61E22B6DB8000BAFE99 /* TeamStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamStatistics.swift; sourceTree = "<group>"; };
 		7677F61F22B6DB8000BAFE99 /* NHLTeam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NHLTeam.swift; sourceTree = "<group>"; };
@@ -211,21 +217,58 @@
 		7677F64122B6DBFE00BAFE99 /* NetworkErrorEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorEnum.swift; sourceTree = "<group>"; };
 		7677F64322B6DBFE00BAFE99 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7677F64522B6DBFF00BAFE99 /* TYProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYProgressBar.swift; sourceTree = "<group>"; };
-		7677F65322B6DED000BAFE99 /* TeamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamManager.swift; sourceTree = "<group>"; };
-		7677F65522B6E45100BAFE99 /* NHLStandingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHLStandingsViewModel.swift; sourceTree = "<group>"; };
-		7677F65722B6F03F00BAFE99 /* RosterPlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterPlayersViewModel.swift; sourceTree = "<group>"; };
-		7677F65922B6F13D00BAFE99 /* PlayerStatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatisticsViewModel.swift; sourceTree = "<group>"; };
-		7677F65B22B6F26E00BAFE99 /* PlayerInjuriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInjuriesViewModel.swift; sourceTree = "<group>"; };
-		7677F65D22B6F31100BAFE99 /* GameLogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogsViewModel.swift; sourceTree = "<group>"; };
 		7677F65F22B6F56500BAFE99 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		76A84A7C22C9AB30003D4C46 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		76C1FEB122C3076500F5DA67 /* TeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListView.swift; sourceTree = "<group>"; };
+		768D32392359539A002F9287 /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
+		7693D18523519CC6008681C3 /* SeasonScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonScheduleView.swift; sourceTree = "<group>"; };
+		7693D18623519CC6008681C3 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7693D18723519CC6008681C3 /* PlayerLeadersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLeadersView.swift; sourceTree = "<group>"; };
+		7693D18823519CC6008681C3 /* PlayerLeaderDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLeaderDataView.swift; sourceTree = "<group>"; };
+		7693D18923519CC6008681C3 /* PlayerLeaderHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLeaderHeaderView.swift; sourceTree = "<group>"; };
+		7693D18A23519CC6008681C3 /* MainMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		7693D18B23519CC6008681C3 /* LeagueStandingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueStandingsView.swift; sourceTree = "<group>"; };
+		7693D18C23519CC6008681C3 /* ScoresView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoresView.swift; sourceTree = "<group>"; };
+		7693D18D23519CC6008681C3 /* GoalieLeadersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalieLeadersView.swift; sourceTree = "<group>"; };
+		7693D18E23519CC6008681C3 /* GameLogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogView.swift; sourceTree = "<group>"; };
+		7693D18F23519CC6008681C3 /* PlayerLeaderImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLeaderImageView.swift; sourceTree = "<group>"; };
+		7693D19023519CC6008681C3 /* TeamStatsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamStatsView.swift; sourceTree = "<group>"; };
+		7693D19123519CC6008681C3 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7693D19223519CC6008681C3 /* SearchPlayerInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPlayerInformationView.swift; sourceTree = "<group>"; };
+		7693D19323519CC6008681C3 /* TeamInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamInformationView.swift; sourceTree = "<group>"; };
+		7693D19423519CC6008681C3 /* DivisionStandingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionStandingsView.swift; sourceTree = "<group>"; };
+		7693D19523519CC6008681C3 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		7693D19623519CC6008681C3 /* TeamRosterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamRosterView.swift; sourceTree = "<group>"; };
+		7693D19723519CC6008681C3 /* LeadersTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadersTabView.swift; sourceTree = "<group>"; };
+		7693D19823519CC6008681C3 /* TeamListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamListView.swift; sourceTree = "<group>"; };
+		7693D19923519CC6008681C3 /* PlayerInjuriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInjuriesView.swift; sourceTree = "<group>"; };
+		7693D19A23519CC6008681C3 /* PlayerStatsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerStatsView.swift; sourceTree = "<group>"; };
+		7693D19B23519CC6008681C3 /* GamesRemainingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesRemainingView.swift; sourceTree = "<group>"; };
+		7693D19C23519CC6008681C3 /* CompletedGamesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedGamesView.swift; sourceTree = "<group>"; };
+		7693D19D23519CC6008681C3 /* PlayerDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailView.swift; sourceTree = "<group>"; };
+		7693D19E23519CC6008681C3 /* VenueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueView.swift; sourceTree = "<group>"; };
+		7693D19F23519CC6008681C3 /* StandingsTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandingsTabView.swift; sourceTree = "<group>"; };
+		7693D1A023519CC6008681C3 /* ConferenceStandingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceStandingsView.swift; sourceTree = "<group>"; };
+		7693D1BE23519FFA008681C3 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7693D1BF23519FFA008681C3 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		7693D1C023519FFA008681C3 /* TeamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamManager.swift; sourceTree = "<group>"; };
+		7693D1C52351A0DE008681C3 /* NHLStandingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NHLStandingsViewModel.swift; sourceTree = "<group>"; };
+		7693D1C62351A0DE008681C3 /* PlayerLeadersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLeadersViewModel.swift; sourceTree = "<group>"; };
+		7693D1C72351A0DE008681C3 /* PlayerInjuriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInjuriesViewModel.swift; sourceTree = "<group>"; };
+		7693D1C82351A0DE008681C3 /* RosterPlayersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosterPlayersViewModel.swift; sourceTree = "<group>"; };
+		7693D1C92351A0DE008681C3 /* PlayerLeaderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLeaderModel.swift; sourceTree = "<group>"; };
+		7693D1CA2351A0DE008681C3 /* SeasonScheduleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonScheduleViewModel.swift; sourceTree = "<group>"; };
+		7693D1CB2351A0DE008681C3 /* UserSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		7693D1CC2351A0DE008681C3 /* GameLogsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogsViewModel.swift; sourceTree = "<group>"; };
+		7693D1CD2351A0DE008681C3 /* PlayerStatisticsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerStatisticsViewModel.swift; sourceTree = "<group>"; };
+		7693D1DA2351A388008681C3 /* StandingsHeaderRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandingsHeaderRow.swift; sourceTree = "<group>"; };
+		7693D1DB2351A388008681C3 /* TeamRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamRowView.swift; sourceTree = "<group>"; };
+		7693D1DC2351A388008681C3 /* LeaderRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderRow.swift; sourceTree = "<group>"; };
+		7693D1DD2351A388008681C3 /* StandingsRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandingsRow.swift; sourceTree = "<group>"; };
+		7693D1DE2351A388008681C3 /* MainMenuRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuRow.swift; sourceTree = "<group>"; };
+		7693D1EA235418E1008681C3 /* DataExchangeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExchangeHelper.swift; sourceTree = "<group>"; };
 		76C1FEB622C41BD800F5DA67 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
-		76C1FEB822C98D1E00F5DA67 /* VenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueView.swift; sourceTree = "<group>"; };
 		76DD306C22AD757D003AD3AA /* HockeyInfoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HockeyInfoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DD306F22AD757D003AD3AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76DD307122AD757D003AD3AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		76DD307322AD757D003AD3AA /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		76DD307522AD7584003AD3AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76DD307822AD7584003AD3AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76DD307D22AD7585003AD3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -237,6 +280,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7693D1E623526C77008681C3 /* KingfisherSwiftUI in Frameworks */,
 				199E9C98DCF51A023E0429DC /* Pods_HockeyInfoSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,61 +305,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7610AD8B22C1466B000F3658 /* Views */ = {
+		7620D4722364DC5600031732 /* PropertyWrappers */ = {
 			isa = PBXGroup;
 			children = (
-				76DD307322AD757D003AD3AA /* MainMenuView.swift */,
-				761713C422B035C5001BE6AB /* PlayerDetailView.swift */,
-				7610AD9422C1981A000F3658 /* StandingsView.swift */,
-				760118D022C1A02500677CED /* DivisionStandingsView.swift */,
-				760118D222C1A07D00677CED /* ConferenceStandingsView.swift */,
-				760118D422C1A0DC00677CED /* LeagueStandingsView.swift */,
-				760118D622C2CFF300677CED /* TeamInformationView.swift */,
-				760118D822C2D02D00677CED /* TeamRosterView.swift */,
-				760118DA22C2D09900677CED /* TeamInjuriesView.swift */,
-				760118DC22C2D0D500677CED /* TeamStatsView.swift */,
-				760118DE22C2D13B00677CED /* GamesRemainingView.swift */,
-				760118E022C2D17C00677CED /* CompletedGamesView.swift */,
-				761CB6BC22C2D969002EFCBE /* SeasonScheduleView.swift */,
-				761CB6BE22C2DA33002EFCBE /* PlayerInformationView.swift */,
-				761CB6C022C2DA8E002EFCBE /* ScoresView.swift */,
-				76C1FEB122C3076500F5DA67 /* TeamListView.swift */,
-				76C1FEB822C98D1E00F5DA67 /* VenueView.swift */,
-				76A84A7C22C9AB30003D4C46 /* MapView.swift */,
+				7620D4732364DCE000031732 /* Storage.swift */,
 			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		7610AD8C22C14779000F3658 /* Row Views */ = {
-			isa = PBXGroup;
-			children = (
-				7610AD8D22C147AC000F3658 /* MainMenuRow.swift */,
-				7663962022C2EB8300E442AE /* TeamRowView.swift */,
-			);
-			path = "Row Views";
-			sourceTree = "<group>";
-		};
-		7677F5AD22B6BC7700BAFE99 /* NetworkManager */ = {
-			isa = PBXGroup;
-			children = (
-				7677F5B022B6BEAA00BAFE99 /* NetworkManager.swift */,
-			);
-			path = NetworkManager;
-			sourceTree = "<group>";
-		};
-		7677F5AE22B6BCD400BAFE99 /* TeamManager */ = {
-			isa = PBXGroup;
-			children = (
-				7677F65322B6DED000BAFE99 /* TeamManager.swift */,
-			);
-			path = TeamManager;
-			sourceTree = "<group>";
-		};
-		7677F5AF22B6BCE200BAFE99 /* DatabaseManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DatabaseManager;
+			path = PropertyWrappers;
 			sourceTree = "<group>";
 		};
 		7677F5B222B6BFCC00BAFE99 /* Models */ = {
@@ -421,19 +416,6 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		7677F61922B6D77F00BAFE99 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				7677F61A22B6D7BA00BAFE99 /* SeasonScheduleViewModel.swift */,
-				7677F65522B6E45100BAFE99 /* NHLStandingsViewModel.swift */,
-				7677F65722B6F03F00BAFE99 /* RosterPlayersViewModel.swift */,
-				7677F65922B6F13D00BAFE99 /* PlayerStatisticsViewModel.swift */,
-				7677F65B22B6F26E00BAFE99 /* PlayerInjuriesViewModel.swift */,
-				7677F65D22B6F31100BAFE99 /* GameLogsViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		7677F61C22B6DB8000BAFE99 /* Database Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +489,93 @@
 			path = "Progress Bar";
 			sourceTree = "<group>";
 		};
+		7693D18423519CC6008681C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7693D18523519CC6008681C3 /* SeasonScheduleView.swift */,
+				7693D18623519CC6008681C3 /* SettingsView.swift */,
+				7693D18723519CC6008681C3 /* PlayerLeadersView.swift */,
+				7693D18823519CC6008681C3 /* PlayerLeaderDataView.swift */,
+				7693D18923519CC6008681C3 /* PlayerLeaderHeaderView.swift */,
+				7693D18A23519CC6008681C3 /* MainMenuView.swift */,
+				7693D18B23519CC6008681C3 /* LeagueStandingsView.swift */,
+				7693D18C23519CC6008681C3 /* ScoresView.swift */,
+				7693D18D23519CC6008681C3 /* GoalieLeadersView.swift */,
+				7693D18E23519CC6008681C3 /* GameLogView.swift */,
+				7693D18F23519CC6008681C3 /* PlayerLeaderImageView.swift */,
+				7693D19023519CC6008681C3 /* TeamStatsView.swift */,
+				7693D19123519CC6008681C3 /* MapView.swift */,
+				7693D19223519CC6008681C3 /* SearchPlayerInformationView.swift */,
+				7693D19323519CC6008681C3 /* TeamInformationView.swift */,
+				7693D19423519CC6008681C3 /* DivisionStandingsView.swift */,
+				7693D19523519CC6008681C3 /* SearchBar.swift */,
+				7693D19623519CC6008681C3 /* TeamRosterView.swift */,
+				7693D19723519CC6008681C3 /* LeadersTabView.swift */,
+				7693D19823519CC6008681C3 /* TeamListView.swift */,
+				7693D19923519CC6008681C3 /* PlayerInjuriesView.swift */,
+				7693D19A23519CC6008681C3 /* PlayerStatsView.swift */,
+				7693D19B23519CC6008681C3 /* GamesRemainingView.swift */,
+				7693D19C23519CC6008681C3 /* CompletedGamesView.swift */,
+				7693D19D23519CC6008681C3 /* PlayerDetailView.swift */,
+				7693D19E23519CC6008681C3 /* VenueView.swift */,
+				7693D19F23519CC6008681C3 /* StandingsTabView.swift */,
+				7693D1A023519CC6008681C3 /* ConferenceStandingsView.swift */,
+			);
+			name = Views;
+			path = ../../HockeyInfoSwiftUI/HockeyInfoSwiftUI/Views;
+			sourceTree = "<group>";
+		};
+		7693D1BD23519FFA008681C3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7693D1BE23519FFA008681C3 /* NetworkManager.swift */,
+				7693D1BF23519FFA008681C3 /* DBManager.swift */,
+				7693D1C023519FFA008681C3 /* TeamManager.swift */,
+			);
+			name = Managers;
+			path = ../../HockeyInfoSwiftUI/HockeyInfoSwiftUI/Managers;
+			sourceTree = "<group>";
+		};
+		7693D1C42351A0DE008681C3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7693D1CB2351A0DE008681C3 /* UserSettings.swift */,
+				7693D1CA2351A0DE008681C3 /* SeasonScheduleViewModel.swift */,
+				7693D1C82351A0DE008681C3 /* RosterPlayersViewModel.swift */,
+				7693D1CD2351A0DE008681C3 /* PlayerStatisticsViewModel.swift */,
+				7693D1C72351A0DE008681C3 /* PlayerInjuriesViewModel.swift */,
+				7693D1C62351A0DE008681C3 /* PlayerLeadersViewModel.swift */,
+				7693D1C92351A0DE008681C3 /* PlayerLeaderModel.swift */,
+				7693D1CC2351A0DE008681C3 /* GameLogsViewModel.swift */,
+				7693D1C52351A0DE008681C3 /* NHLStandingsViewModel.swift */,
+			);
+			name = ViewModels;
+			path = ../../HockeyInfoSwiftUI/HockeyInfoSwiftUI/ViewModels;
+			sourceTree = "<group>";
+		};
+		7693D1D92351A388008681C3 /* Row Views */ = {
+			isa = PBXGroup;
+			children = (
+				7693D1DA2351A388008681C3 /* StandingsHeaderRow.swift */,
+				7693D1DB2351A388008681C3 /* TeamRowView.swift */,
+				7693D1DC2351A388008681C3 /* LeaderRow.swift */,
+				7693D1DD2351A388008681C3 /* StandingsRow.swift */,
+				7693D1DE2351A388008681C3 /* MainMenuRow.swift */,
+			);
+			name = "Row Views";
+			path = "../../HockeyInfoSwiftUI/HockeyInfoSwiftUI/Row Views";
+			sourceTree = "<group>";
+		};
+		7693D1E9235418AC008681C3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7693D1EA235418E1008681C3 /* DataExchangeHelper.swift */,
+				768D32392359539A002F9287 /* URLHelper.swift */,
+				7620D470235D01D700031732 /* UserDefaultsHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		76C1FEB522C41BA700F5DA67 /* Venue */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,10 +605,16 @@
 		76DD306E22AD757D003AD3AA /* HockeyInfoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				76C1FEB522C41BA700F5DA67 /* Venue */,
-				7610AD8C22C14779000F3658 /* Row Views */,
-				7610AD8B22C1466B000F3658 /* Views */,
+				7620D4722364DC5600031732 /* PropertyWrappers */,
+				76DD306F22AD757D003AD3AA /* AppDelegate.swift */,
+				76DD307122AD757D003AD3AA /* SceneDelegate.swift */,
 				7677F65F22B6F56500BAFE99 /* Constants.swift */,
+				7693D1E9235418AC008681C3 /* Helpers */,
+				7693D1D92351A388008681C3 /* Row Views */,
+				7693D1C42351A0DE008681C3 /* ViewModels */,
+				7693D1BD23519FFA008681C3 /* Managers */,
+				7693D18423519CC6008681C3 /* Views */,
+				76C1FEB522C41BA700F5DA67 /* Venue */,
 				7677F63322B6DBFE00BAFE99 /* Alerts */,
 				7677F63822B6DBFE00BAFE99 /* Enums */,
 				7677F63F22B6DBFE00BAFE99 /* Error Enums */,
@@ -547,13 +622,7 @@
 				7677F64422B6DBFF00BAFE99 /* Progress Bar */,
 				7677F63522B6DBFE00BAFE99 /* Utils */,
 				7677F61C22B6DB8000BAFE99 /* Database Models */,
-				7677F61922B6D77F00BAFE99 /* ViewModels */,
 				7677F5B222B6BFCC00BAFE99 /* Models */,
-				7677F5AF22B6BCE200BAFE99 /* DatabaseManager */,
-				7677F5AE22B6BCD400BAFE99 /* TeamManager */,
-				7677F5AD22B6BC7700BAFE99 /* NetworkManager */,
-				76DD306F22AD757D003AD3AA /* AppDelegate.swift */,
-				76DD307122AD757D003AD3AA /* SceneDelegate.swift */,
 				76DD307522AD7584003AD3AA /* Assets.xcassets */,
 				76F9897B22B9B0A80050744C /* LaunchScreen.storyboard */,
 				76DD307D22AD7585003AD3AA /* Info.plist */,
@@ -588,6 +657,9 @@
 			dependencies = (
 			);
 			name = HockeyInfoSwiftUI;
+			packageProductDependencies = (
+				7693D1E523526C77008681C3 /* KingfisherSwiftUI */,
+			);
 			productName = HockeyInfoSwiftUI;
 			productReference = 76DD306C22AD757D003AD3AA /* HockeyInfoSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -616,6 +688,9 @@
 				Base,
 			);
 			mainGroup = 76DD306322AD757D003AD3AA;
+			packageReferences = (
+				7693D1E423526C77008681C3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 76DD306D22AD757D003AD3AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -686,109 +761,130 @@
 			buildActionMask = 2147483647;
 			files = (
 				7677F61522B6BFCC00BAFE99 /* GameLogReferences.swift in Sources */,
+				7693D1B123519CC6008681C3 /* SearchBar.swift in Sources */,
+				7693D1BC23519CC6008681C3 /* ConferenceStandingsView.swift in Sources */,
 				76C1FEB722C41BD800F5DA67 /* Venue.swift in Sources */,
 				7677F62D22B6DB8000BAFE99 /* NHLPlayer.swift in Sources */,
 				7677F5F722B6BFCC00BAFE99 /* CurrentInjuryData.swift in Sources */,
+				7693D1E02351A389008681C3 /* TeamRowView.swift in Sources */,
 				7677F60522B6BFCC00BAFE99 /* TeamInformation.swift in Sources */,
+				7693D1A323519CC6008681C3 /* PlayerLeadersView.swift in Sources */,
 				7677F5F822B6BFCC00BAFE99 /* GoaltendingData.swift in Sources */,
 				7677F61122B6BFCC00BAFE99 /* ScoringInfo.swift in Sources */,
+				7693D1D12351A0DE008681C3 /* PlayerInjuriesViewModel.swift in Sources */,
 				7677F62C22B6DB8000BAFE99 /* NHLPlayerInjury.swift in Sources */,
 				7677F5F122B6BFCC00BAFE99 /* HandednessData.swift in Sources */,
+				7693D1D42351A0DE008681C3 /* SeasonScheduleViewModel.swift in Sources */,
 				7677F62A22B6DB8000BAFE99 /* NHLTeam.swift in Sources */,
 				7677F64E22B6DBFF00BAFE99 /* PlayingProbabilityEnum.swift in Sources */,
 				7677F5F922B6BFCC00BAFE99 /* PlayerStatsTotal.swift in Sources */,
 				7677F5ED22B6BFCC00BAFE99 /* ScoreInfo.swift in Sources */,
-				7677F65822B6F03F00BAFE99 /* RosterPlayersViewModel.swift in Sources */,
-				7677F65E22B6F31100BAFE99 /* GameLogsViewModel.swift in Sources */,
+				7693D1D32351A0DE008681C3 /* PlayerLeaderModel.swift in Sources */,
+				7693D1E12351A389008681C3 /* LeaderRow.swift in Sources */,
+				7693D1BB23519CC6008681C3 /* StandingsTabView.swift in Sources */,
+				7693D1B223519CC6008681C3 /* TeamRosterView.swift in Sources */,
+				7693D1E32351A389008681C3 /* MainMenuRow.swift in Sources */,
+				7693D1AE23519CC6008681C3 /* SearchPlayerInformationView.swift in Sources */,
+				7693D1E22351A389008681C3 /* StandingsRow.swift in Sources */,
 				7677F5FC22B6BFCC00BAFE99 /* PlayerInjuryInfo.swift in Sources */,
 				7677F60122B6BFCC00BAFE99 /* TeamStats.swift in Sources */,
-				76A84A7D22C9AB30003D4C46 /* MapView.swift in Sources */,
 				7677F64722B6DBFF00BAFE99 /* TimeAndDateUtils.swift in Sources */,
-				7610AD9522C1981B000F3658 /* StandingsView.swift in Sources */,
 				7677F61622B6BFCC00BAFE99 /* GameLog.swift in Sources */,
+				7693D1D22351A0DE008681C3 /* RosterPlayersViewModel.swift in Sources */,
+				7693D1B723519CC6008681C3 /* GamesRemainingView.swift in Sources */,
 				7677F5EC22B6BFCC00BAFE99 /* ScheduledGame.swift in Sources */,
 				7677F5F322B6BFCC00BAFE99 /* PlayerStatId.swift in Sources */,
 				7677F63022B6DB8000BAFE99 /* TeamStandings.swift in Sources */,
 				7677F64A22B6DBFF00BAFE99 /* ConferenceEnum.swift in Sources */,
 				7677F65122B6DBFF00BAFE99 /* Extensions.swift in Sources */,
+				7693D1AD23519CC6008681C3 /* MapView.swift in Sources */,
 				7677F60222B6BFCC00BAFE99 /* DivisionRankData.swift in Sources */,
 				7677F62F22B6DB8000BAFE99 /* NHLScoringSummary.swift in Sources */,
-				7677F61B22B6D7BA00BAFE99 /* SeasonScheduleViewModel.swift in Sources */,
 				7677F5E922B6BFCC00BAFE99 /* PeriodInfo.swift in Sources */,
+				7693D1A723519CC6008681C3 /* LeagueStandingsView.swift in Sources */,
 				7677F60322B6BFCC00BAFE99 /* OverallRankData.swift in Sources */,
 				7677F60922B6BFCC00BAFE99 /* StandingsReferenceData.swift in Sources */,
-				76C1FEB922C98D1E00F5DA67 /* VenueView.swift in Sources */,
 				76DD307022AD757D003AD3AA /* AppDelegate.swift in Sources */,
-				7610AD8E22C147AC000F3658 /* MainMenuRow.swift in Sources */,
-				760118DB22C2D09900677CED /* TeamInjuriesView.swift in Sources */,
 				7677F5FD22B6BFCC00BAFE99 /* CurrentTeamData.swift in Sources */,
+				7693D1BA23519CC6008681C3 /* VenueView.swift in Sources */,
 				7677F64C22B6DBFF00BAFE99 /* PeriodEnum.swift in Sources */,
 				7677F61222B6BFCC00BAFE99 /* GameData.swift in Sources */,
-				7677F65C22B6F26E00BAFE99 /* PlayerInjuriesViewModel.swift in Sources */,
-				7677F65622B6E45100BAFE99 /* NHLStandingsViewModel.swift in Sources */,
 				7677F66022B6F56500BAFE99 /* Constants.swift in Sources */,
 				7677F60022B6BFCC00BAFE99 /* PlayoffRankData.swift in Sources */,
-				7677F65422B6DED000BAFE99 /* TeamManager.swift in Sources */,
-				7677F65A22B6F13D00BAFE99 /* PlayerStatisticsViewModel.swift in Sources */,
+				7693D1A523519CC6008681C3 /* PlayerLeaderHeaderView.swift in Sources */,
+				7693D1B023519CC6008681C3 /* DivisionStandingsView.swift in Sources */,
+				7693D1AC23519CC6008681C3 /* TeamStatsView.swift in Sources */,
+				7693D1A923519CC6008681C3 /* GoalieLeadersView.swift in Sources */,
+				7693D1B823519CC6008681C3 /* CompletedGamesView.swift in Sources */,
 				76DD307222AD757D003AD3AA /* SceneDelegate.swift in Sources */,
 				7677F62E22B6DB8000BAFE99 /* PlayerStatistics.swift in Sources */,
 				7677F5FB22B6BFCC00BAFE99 /* PlayerStatData.swift in Sources */,
+				7620D4742364DCE000031732 /* Storage.swift in Sources */,
+				7693D1DF2351A389008681C3 /* StandingsHeaderRow.swift in Sources */,
 				7677F64622B6DBFF00BAFE99 /* Alert.swift in Sources */,
 				7677F60A22B6BFCC00BAFE99 /* FaceoffData.swift in Sources */,
 				7677F64D22B6DBFF00BAFE99 /* PositionEnum.swift in Sources */,
 				7677F5F022B6BFCC00BAFE99 /* PenaltyData.swift in Sources */,
 				7677F62B22B6DB8000BAFE99 /* NHLGameLog.swift in Sources */,
 				7677F5EE22B6BFCC00BAFE99 /* TeamData.swift in Sources */,
-				7677F5B122B6BEAA00BAFE99 /* NetworkManager.swift in Sources */,
+				7693D1EB235418E1008681C3 /* DataExchangeHelper.swift in Sources */,
 				7677F5FA22B6BFCC00BAFE99 /* ScoringData.swift in Sources */,
 				7677F64922B6DBFF00BAFE99 /* PlayedStatusEnum.swift in Sources */,
 				7677F5EF22B6BFCC00BAFE99 /* VenueData.swift in Sources */,
+				7693D1CF2351A0DE008681C3 /* NHLStandingsViewModel.swift in Sources */,
 				7677F62822B6DB8000BAFE99 /* NHLPeriodScoringData.swift in Sources */,
-				760118E122C2D17C00677CED /* CompletedGamesView.swift in Sources */,
-				76C1FEB222C3076500F5DA67 /* TeamListView.swift in Sources */,
+				768D323A2359539A002F9287 /* URLHelper.swift in Sources */,
+				7693D1B923519CC6008681C3 /* PlayerDetailView.swift in Sources */,
 				7677F5F622B6BFCC00BAFE99 /* PlayerData.swift in Sources */,
-				761CB6C122C2DA8E002EFCBE /* ScoresView.swift in Sources */,
-				761CB6BF22C2DA33002EFCBE /* PlayerInformationView.swift in Sources */,
-				760118D722C2CFF300677CED /* TeamInformationView.swift in Sources */,
 				7677F5F422B6BFCC00BAFE99 /* PlayerInjuries.swift in Sources */,
-				760118D122C1A02500677CED /* DivisionStandingsView.swift in Sources */,
 				7677F60722B6BFCC00BAFE99 /* ConferenceRankData.swift in Sources */,
-				760118D522C1A0DC00677CED /* LeagueStandingsView.swift in Sources */,
 				7677F60622B6BFCC00BAFE99 /* StandingsData.swift in Sources */,
 				7677F60822B6BFCC00BAFE99 /* PowerplayData.swift in Sources */,
 				7677F61422B6BFCC00BAFE99 /* StatsData.swift in Sources */,
-				760118DD22C2D0D600677CED /* TeamStatsView.swift in Sources */,
 				7677F5FF22B6BFCC00BAFE99 /* PlayerInfo.swift in Sources */,
 				7677F60C22B6BFCC00BAFE99 /* MiscellaneousData.swift in Sources */,
+				7693D1AA23519CC6008681C3 /* GameLogView.swift in Sources */,
+				7693D1A423519CC6008681C3 /* PlayerLeaderDataView.swift in Sources */,
+				7693D1A123519CC6008681C3 /* SeasonScheduleView.swift in Sources */,
 				7677F61322B6BFCC00BAFE99 /* GameLogData.swift in Sources */,
+				7620D471235D01D700031732 /* UserDefaultsHelper.swift in Sources */,
+				7693D1A223519CC6008681C3 /* SettingsView.swift in Sources */,
 				7677F61822B6BFCC00BAFE99 /* MenuCategory.swift in Sources */,
+				7693D1A623519CC6008681C3 /* MainMenuView.swift in Sources */,
 				7677F64F22B6DBFF00BAFE99 /* DatabaseErrorEnum.swift in Sources */,
 				7677F64B22B6DBFF00BAFE99 /* DivisionEnum.swift in Sources */,
 				7677F62922B6DB8000BAFE99 /* TeamStatistics.swift in Sources */,
 				7677F60E22B6BFCC00BAFE99 /* PeriodScoringData.swift in Sources */,
 				7677F60D22B6BFCC00BAFE99 /* TeamStandingsData.swift in Sources */,
+				7693D1D62351A0DE008681C3 /* GameLogsViewModel.swift in Sources */,
 				7677F60422B6BFCC00BAFE99 /* StandingsCategory.swift in Sources */,
-				760118D322C1A07D00677CED /* ConferenceStandingsView.swift in Sources */,
+				7693D1C123519FFA008681C3 /* NetworkManager.swift in Sources */,
 				7677F5F522B6BFCC00BAFE99 /* PlayerStats.swift in Sources */,
-				76DD307422AD757D003AD3AA /* MainMenuView.swift in Sources */,
-				7663962122C2EB8300E442AE /* TeamRowView.swift in Sources */,
+				7693D1A823519CC6008681C3 /* ScoresView.swift in Sources */,
 				7677F60B22B6BFCC00BAFE99 /* NHLStandings.swift in Sources */,
 				7677F65222B6DBFF00BAFE99 /* TYProgressBar.swift in Sources */,
+				7693D1D02351A0DE008681C3 /* PlayerLeadersViewModel.swift in Sources */,
 				7677F5EB22B6BFCC00BAFE99 /* SeasonSchedule.swift in Sources */,
+				7693D1D52351A0DE008681C3 /* UserSettings.swift in Sources */,
+				7693D1C223519FFA008681C3 /* DBManager.swift in Sources */,
+				7693D1AB23519CC6008681C3 /* PlayerLeaderImageView.swift in Sources */,
+				7693D1AF23519CC6008681C3 /* TeamInformationView.swift in Sources */,
 				7677F60F22B6BFCC00BAFE99 /* ScoringPlay.swift in Sources */,
-				760118DF22C2D13B00677CED /* GamesRemainingView.swift in Sources */,
 				7677F64822B6DBFF00BAFE99 /* ConversionUtils.swift in Sources */,
+				7693D1C323519FFA008681C3 /* TeamManager.swift in Sources */,
 				7677F5F222B6BFCC00BAFE99 /* RosterPlayers.swift in Sources */,
+				7693D1B523519CC6008681C3 /* PlayerInjuriesView.swift in Sources */,
 				7677F61722B6BFCC00BAFE99 /* GameReference.swift in Sources */,
-				760118D922C2D02D00677CED /* TeamRosterView.swift in Sources */,
 				7677F63122B6DB8000BAFE99 /* NHLSchedule.swift in Sources */,
+				7693D1B423519CC6008681C3 /* TeamListView.swift in Sources */,
 				7677F5EA22B6BFCC00BAFE99 /* ScheduleInfo.swift in Sources */,
+				7693D1B323519CC6008681C3 /* LeadersTabView.swift in Sources */,
+				7693D1B623519CC6008681C3 /* PlayerStatsView.swift in Sources */,
 				7677F63222B6DB8000BAFE99 /* MainMenuCategory.swift in Sources */,
 				7677F61022B6BFCC00BAFE99 /* ScoringSummary.swift in Sources */,
 				7677F5FE22B6BFCC00BAFE99 /* SkatingData.swift in Sources */,
+				7693D1D72351A0DE008681C3 /* PlayerStatisticsViewModel.swift in Sources */,
 				7677F65022B6DBFF00BAFE99 /* NetworkErrorEnum.swift in Sources */,
-				761CB6BD22C2D969002EFCBE /* SeasonScheduleView.swift in Sources */,
-				761713C522B035C5001BE6AB /* PlayerDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,6 +1069,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7693D1E423526C77008681C3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7693D1E523526C77008681C3 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7693D1E423526C77008681C3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76DD306422AD757D003AD3AA /* Project object */;
 }

@@ -26,7 +26,9 @@ class PlayerStatistics : Object
     @objc dynamic var gameTyingGoals: Int = 0
     @objc dynamic var penalties: Int = 0
     @objc dynamic var penaltyMinutes: Int = 0
-    @objc dynamic var dateCreated: String = ""
+    @objc dynamic var dateCreated: String = Constants.EMPTY_STRING
+    @objc dynamic var season: String = Constants.EMPTY_STRING
+    @objc dynamic var seasonType = Constants.EMPTY_STRING
     
     //  Skater Data
     @objc dynamic var plusMinus: Int = 0

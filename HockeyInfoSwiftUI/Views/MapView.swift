@@ -30,6 +30,6 @@ struct MapView_Preview: PreviewProvider
 {
     static var previews: some View
     {
-        MapView(venue: Venue.allVenues()[15])
+        MapView(venue: Venue.allVenues()[14])
     }
 }

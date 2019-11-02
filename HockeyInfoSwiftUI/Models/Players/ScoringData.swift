@@ -11,18 +11,18 @@ import SwiftUI
 struct ScoringData: Codable, Hashable, Identifiable
 {
     var id = UUID()
-    var goals: Int?
-    var assists: Int?
-    var points: Int?
-    var hatTricks: Int?
-    var powerplayGoals: Int?
-    var powerplayAssists: Int?
-    var powerplayPoints: Int?
-    var shorthandedGoals: Int?
-    var shorthandedAssists: Int?
-    var shorthandedPoints: Int?
-    var gameWinningGoals: Int?
-    var gameTyingGoals: Int?
+    var goals = 0
+    var assists = 0
+    var points = 0
+    var hatTricks = 0
+    var powerplayGoals = 0
+    var powerplayAssists = 0
+    var powerplayPoints = 0
+    var shorthandedGoals = 0
+    var shorthandedAssists = 0
+    var shorthandedPoints = 0
+    var gameWinningGoals = 0
+    var gameTyingGoals = 0
     
     private enum CodingKeys : String, CodingKey
     {

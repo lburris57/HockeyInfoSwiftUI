@@ -11,9 +11,9 @@ import SwiftUI
 struct PlayerStatId: Codable, Hashable, Identifiable
 {
     var id: Int = 0
-    var firstName: String?
-    var lastName: String?
-    var currentTeam: CurrentTeamData?
+    var firstName = ""
+    var lastName = ""
+    var currentTeam = CurrentTeamData()
     
     private enum CodingKeys : String, CodingKey
     {

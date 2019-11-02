@@ -9,9 +9,13 @@ import SwiftUI
 
 struct SeasonScheduleView : View
 {
+    @EnvironmentObject var settings: UserSettings
+    
+    @ObservedObject var model = SeasonScheduleViewModel()
+    
     var body: some View
     {
-        Text("Season Schedule View!")
+       Text("Number of games in season schedule is: \(model.seasonSchedule.gameList.count)")   
     }
 }
 
@@ -20,7 +24,7 @@ struct SeasonScheduleView_Previews : PreviewProvider
 {
     static var previews: some View
     {
-        SeasonScheduleView()
+        SeasonScheduleView().environmentObject(UserSettings())
     }
 }
 #endif

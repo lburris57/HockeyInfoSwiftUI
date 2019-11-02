@@ -11,8 +11,8 @@ import SwiftUI
 struct SeasonSchedule: Codable, Hashable, Identifiable
 {
     var id = UUID()
-    var lastUpdatedOn: String
-    var gameList: [ScheduledGame]
+    var lastUpdatedOn = ""
+    var gameList = [ScheduledGame]()
     
     private enum CodingKeys : String, CodingKey
     {

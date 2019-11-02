@@ -11,12 +11,12 @@ import SwiftUI
 struct PlayerInjuryInfo: Codable, Hashable, Identifiable
 {
     var id = 0
-    var firstName: String
-    var lastName: String
-    var position: String?
-    var jerseyNumber: Int?
-    var currentTeamInfo: CurrentTeamData?
-    var currentInjuryInfo: CurrentInjuryData?
+    var firstName = ""
+    var lastName = ""
+    var position = ""
+    var jerseyNumber = 0
+    var currentTeamInfo = CurrentTeamData()
+    var currentInjuryInfo = CurrentInjuryData()
     
     private enum CodingKeys : String, CodingKey
     {

@@ -155,12 +155,94 @@ class TimeAndDateUtils
         return "since-" + date.toFormat(Constants.SHORT_DATE_FORMAT)
     }
     
-    static func getDate(fromString dateString: String, dateFormat format: String ) -> Date?
+    static func getDate(fromString dateString: String, dateFormat format: String) -> Date?
     {
         let formatter = DateFormatter()
         
         formatter.dateFormat = format
         
         return formatter.date(from: dateString)
+    }
+    
+    static func getCurrentSeason() -> String
+    {
+        let currentMonth = Int(Date().toFormat(Constants.MONTH_FORMAT))
+        let currentYear = Int(Date().toFormat(Constants.YEAR_FORMAT))
+        
+        if let year = currentYear
+        {
+            return currentMonth! > 6 ? "\(year)-\(year + 1)" : "\(year - 1)-\(year)"
+        }
+        else
+        {
+            return Constants.S2018_2019
+        }
+    }
+    
+    static func getCurrentPlayoffSeason() -> String
+    {
+        let currentMonth = Int(Date().toFormat(Constants.MONTH_FORMAT))
+        let currentYear = Int(Date().toFormat(Constants.YEAR_FORMAT))
+        
+        if let year = currentYear
+        {
+            return currentMonth! > 6 ? "\(year + 1)" : "\(year)"
+        }
+        else
+        {
+            return "2019"
+        }
+    }
+    
+    static func isValidSetting(_ season: String, _ seasonType: String) -> Bool
+    {
+        let currentMonth = Int(Date().toFormat(Constants.MONTH_FORMAT))
+        
+        print("Current season is \(getCurrentSeason())")
+        
+        //  If prior season, return true
+        if(season != getCurrentSeason() || seasonType != Constants.PLAYOFFS)
+        {
+            return true
+        }
+        else if(season == getCurrentSeason())
+        {
+            //  If current year and playoffs haven't started yet, return false
+            if let currentMonth = currentMonth
+            {
+                if(seasonType == Constants.PLAYOFFS)
+                {
+                    return currentMonth >= 4 && currentMonth <= 6 ? true : false
+                }
+            }
+        }
+        
+        return true
+    }
+    
+    static func isValidSetting(_ season: String, _ isPlayoffs: Bool) -> Bool
+    {
+        let currentMonth = Int(Date().toFormat(Constants.MONTH_FORMAT))
+        
+        print("Current season is \(getCurrentSeason())")
+        
+        //  If prior season, return true
+        if(season != getCurrentSeason() || !isPlayoffs)
+        {
+            return true
+        }
+        else if(season == getCurrentSeason())
+        {
+            //  If current year and playoffs haven't started yet, return false
+            if let currentMonth = currentMonth
+            {
+                if(isPlayoffs)
+                {
+                    return currentMonth >= 4 && currentMonth <= 6 ? true : false
+                }
+            }
+        }
+        
+        return true
     }
 }

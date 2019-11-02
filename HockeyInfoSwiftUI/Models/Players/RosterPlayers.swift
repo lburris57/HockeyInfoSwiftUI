@@ -11,8 +11,9 @@ import SwiftUI
 struct RosterPlayers: Codable, Hashable, Identifiable
 {
     var id = UUID()
-    var lastUpdatedOn: String
-    var playerInfoList: [PlayerInfo]
+    var lastUpdatedOn = ""
+    var playerInfoList = [PlayerInfo]()
+    var playerNames = [String]()
     
     private enum CodingKeys : String, CodingKey
     {

@@ -43,4 +43,15 @@ class ConversionUtils
     {
         return text.replacingOccurrences(of: "(Empty Net) ", with: "")
     }
+    
+    static func formatToSpecifiedDecimalPlaces(_ value: Double, _ decimalPlaces: Int) -> String
+    {
+       
+        return value.isNaN ? "" : String(format: "%.0\(decimalPlaces)f", value)
+    }
+    
+    static func formatToSpecifiedDecimalPlaces(_ value: Double, _ decimalPlaces: Int) -> Double
+    {
+        return value.isNaN ? 0.0 : Double(String(format: "%.0\(decimalPlaces)f", value))!
+    }
 }

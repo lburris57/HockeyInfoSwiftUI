@@ -9,14 +9,14 @@ import Foundation
 import Combine
 import SwiftUI
 
-final class PlayerInjuriesViewModel: BindableObject
+final class PlayerInjuriesViewModel: ObservableObject
 {
-    var didChange = PassthroughSubject<PlayerInjuriesViewModel, Never>()
-    var playerInjuries: PlayerInjuries?
+    var willChange = PassthroughSubject<PlayerInjuriesViewModel, Never>()
+    var playerInjuries = PlayerInjuries()
     {
-        didSet
+        willSet
         {
-            didChange.send(self)
+            willChange.send(self)
         }
     }
     
@@ -28,8 +28,8 @@ final class PlayerInjuriesViewModel: BindableObject
     private func fetchPlayerInjuries()
     {
         NetworkManager().retrievePlayerInjuries
-            {
-                self.playerInjuries = $0
+        {
+            self.playerInjuries = $0
         }
     }
 }

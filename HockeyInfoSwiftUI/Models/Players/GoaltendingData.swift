@@ -11,19 +11,19 @@ import SwiftUI
 struct GoaltendingData: Codable, Hashable, Identifiable
 {
     var id = UUID()
-    var wins: Int?
-    var losses: Int?
-    var overtimeWins: Int?
-    var overtimeLosses: Int?
-    var goalsAgainst: Int?
-    var shotsAgainst: Int?
-    var saves: Int?
-    var goalsAgainstAverage: Double?
-    var savePercentage: Double?
-    var shutouts: Int?
-    var gamesStarted: Int?
-    var creditForGame: Int?
-    var minutesPlayed: Int?
+    var wins = 0
+    var losses = 0
+    var overtimeWins = 0
+    var overtimeLosses = 0
+    var goalsAgainst = 0
+    var shotsAgainst = 0
+    var saves = 0
+    var goalsAgainstAverage = 0.0
+    var savePercentage = 0.0
+    var shutouts = 0
+    var gamesStarted = 0
+    var creditForGame = 0
+    var minutesPlayed = 0
     
     private enum CodingKeys : String, CodingKey
     {

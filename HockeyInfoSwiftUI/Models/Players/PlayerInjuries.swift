@@ -11,8 +11,8 @@ import SwiftUI
 struct PlayerInjuries: Codable, Hashable, Identifiable
 {
     var id = UUID()
-    var lastUpdatedOn: String
-    var playerInfoList: [PlayerInjuryInfo]
+    var lastUpdatedOn = ""
+    var playerInfoList = [PlayerInjuryInfo]()
     
     private enum CodingKeys : String, CodingKey
     {

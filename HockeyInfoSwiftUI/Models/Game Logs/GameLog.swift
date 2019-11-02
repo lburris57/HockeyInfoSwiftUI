@@ -11,8 +11,8 @@ import SwiftUI
 struct GameLog: Codable, Hashable, Identifiable
 {
     var id = UUID()
-    var lastUpdatedOn: String
-    var gameLogDataList: [GameLogData]
+    var lastUpdatedOn = ""
+    var gameLogDataList = [GameLogData]()
     
     private enum CodingKeys : String, CodingKey
     {

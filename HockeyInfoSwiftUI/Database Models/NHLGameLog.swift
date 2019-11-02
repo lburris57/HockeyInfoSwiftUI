@@ -11,11 +11,11 @@ import RealmSwift
 class NHLGameLog: Object
 {
     @objc dynamic var id : Int = 0
-    @objc dynamic var date : String = ""
-    @objc dynamic var time : String = ""
-    @objc dynamic var playedStatus : String = ""
+    @objc dynamic var date : String = Constants.EMPTY_STRING
+    @objc dynamic var time : String = Constants.EMPTY_STRING
+    @objc dynamic var playedStatus : String = Constants.EMPTY_STRING
     @objc dynamic var homeTeamId : Int = 0
-    @objc dynamic var homeTeamAbbreviation : String = ""
+    @objc dynamic var homeTeamAbbreviation : String = Constants.EMPTY_STRING
     @objc dynamic var homeWins : Int = 0
     @objc dynamic var homeLosses : Int = 0
     @objc dynamic var homeOvertimeWins : Int = 0
@@ -37,7 +37,7 @@ class NHLGameLog: Object
     @objc dynamic var homePenaltyMinutes: Int = 0
     @objc dynamic var homeHits: Int = 0
     @objc dynamic var awayTeamId : Int = 0
-    @objc dynamic var awayTeamAbbreviation : String = ""
+    @objc dynamic var awayTeamAbbreviation : String = Constants.EMPTY_STRING
     @objc dynamic var awayWins : Int = 0
     @objc dynamic var awayLosses : Int = 0
     @objc dynamic var awayOvertimeWins : Int = 0
@@ -58,8 +58,10 @@ class NHLGameLog: Object
     @objc dynamic var awayPenalties: Int = 0
     @objc dynamic var awayPenaltyMinutes: Int = 0
     @objc dynamic var awayHits: Int = 0
-    @objc dynamic var lastUpdatedOn: String = ""
-    @objc dynamic var dateCreated: String = ""
+    @objc dynamic var lastUpdatedOn: String = Constants.EMPTY_STRING
+    @objc dynamic var dateCreated: String = Constants.EMPTY_STRING
+    @objc dynamic var season: String = Constants.EMPTY_STRING
+    @objc dynamic var seasonType = Constants.EMPTY_STRING
     
     var parentTeam = LinkingObjects(fromType: NHLTeam.self, property: "gameLogs")
     

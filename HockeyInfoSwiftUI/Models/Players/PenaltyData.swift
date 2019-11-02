@@ -11,8 +11,8 @@ import SwiftUI
 struct PenaltyData: Codable, Hashable, Identifiable
 {
     var id = UUID()
-    var penalties: Int?
-    var penaltyMinutes: Int?
+    var penalties = 0
+    var penaltyMinutes = 0
     
     private enum CodingKeys : String, CodingKey
     {
